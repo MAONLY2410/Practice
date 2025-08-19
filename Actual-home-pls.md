@@ -1,4 +1,4 @@
-# Breve introducción sobre lo que posee la pantalla de inicio
+# Breve introducción sobre lo que posee la Pantalla de Inicio
 Esta pantalla tiene como objetivo mostrar cierta información relevante sobre el PLS **(Port Logistic System)** que es el sistema de gestión portuaria en desarrollo. Dicha pantalla se subdivide de forma visual en tres secciones prinicipales:
 1. Header (Información varia).
 2. Body (Información relevante). Que se subdivide en tres secciones:
@@ -21,7 +21,7 @@ Esta sección tiene como objetivo mostrar cierta información relevante sobre lo
 * **Arribos programados:** Leyenda que indica que se encuentran arribos programados en el sistema.
 * **Campo año:** Campo de tipo obligatorio que permite ingresar solamente caracteres numéricos y algunos especiales (, . - +) permitiendo anexar el año en el que se desea ver los arribos programados y la información relevante de ellos.
 * **Campo semana:** Campo no obligatorio que permite ingresar solamente caracteres numéricos y algunos especiales (, . - +) permitiendo anexar la semana en la que se desea ver los arribos programados y la información relevante de ellos.
-* **Símbolo filtrar:** Funciona de manera conjunta con los campos año y semana para así permitir el filtrado de los arribos programados por el año y la semana en el que se desea ver. (Se refleja como un botón de acción directa de color azul con el diseño clásico de un símbol de filtro).
+* **Símbolo filtrar:** Funciona de manera conjunta con los campos año y semana para así permitir el filtrado de los arribos programados por el año y la semana en el que se desea ver. (Se refleja como un botón de acción directa de color azul con el diseño clásico de un símbolo de filtro).
 * **Campo de filtro:** Permite filtrar los arribos programados por el # de arribo, nave, identificador y los otros diversos campos que se encuentran en la tabla de arribos programados.
 * **Símbolo que guía al programa operativo:** Funciona como un botón de acción directa que tiene configurado de forma interna el redirigir al programa operativo actual del sistema de gestión portuaria. (Se refleja como un símbolo especial de una cuadrado con una flecha).
 * **Símbolo de colapso:** Funciona como un botón de acción que permite ocultar o mostrar toda la información del apartado de arribos programados. (Se refleja como un símbolo especial de una flecha que se mueve hacía abajo o hacía arriba).

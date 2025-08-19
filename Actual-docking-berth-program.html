@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Operational-program-pls.md</title>
+<title>Actual-docking-berth-program.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,12 +365,12 @@ code {
           : 'default'
     });
   </script>
-<h1 id="breve-introducci%C3%B3n-sobre-lo-que-posee-la-pantalla-de-programa-operativo">Breve introducción sobre lo que posee la pantalla de Programa Operativo</h1>
-<p>Esta pantalla tiene como objetivo mostrar cierta información relevante sobre el programa operativo de gestión portuaria en desarrollo. Dicha pantalla se subdivide de forma visual en tres secciones prinicipales:</p>
+<h1 id="breve-introducci%C3%B3n-sobre-lo-que-posee-la-pantalla-de-programa-de-atraques">Breve introducción sobre lo que posee la pantalla de Programa de Atraques</h1>
+<p>Esta pantalla tiene como función definida el poder mostrar la gestión e información relevante del programa de atraques en el sistema de gestión portuaria. Dicha pantalla se encuentra dividida en tres secciones principales:</p>
 <ol>
 <li>Header (Información varia).</li>
 <li>Body (Información relevante).</li>
-<li>Footer (Información varia legal).</li>
+<li>Footer (Información varia de índole legal).</li>
 </ol>
 <h1 id="header-informaci%C3%B3n-varia">Header (Información varia)</h1>
 <p>Esta sección tiene como objetivo reflejar ciertas configuraciones e información relevante tanto del sistema como del usuario que se encuentra en el sistema de gestión portuaria. Mostrando lo siguiente:</p>
@@ -383,29 +383,33 @@ code {
 <li><strong>Usuario actual logueado:</strong> Muestra el correo electrónico del usuario brindado por la empresa con el cual posee ciertas acciones en el sistema.</li>
 <li><strong>Cerrar sesión:</strong> Ícono ubicado de lado derecho superior que permite cerrar la sesión del usuario actual. (Se refleja como un botón de acción directa con el diseño de una puerta y una flecha).</li>
 </ul>
-<h1 id="body-programa-operativo">Body (Programa operativo)</h1>
-<p>Esta sección tiene como objetivo mostrar cierta información relevante sobre el programa operativo de gestión portuaria en desarrollo. Mostrando lo siguiente:</p>
+<h1 id="body-programa-de-atraques">Body (Programa de Atraques)</h1>
+<p>Esta sección cumple con el objetivo de brindar de forma controlada y visual la gestión de todos los diversos atraques programados en el sistema de gestión portuaria. Mostrando lo siguiente:</p>
 <ul>
-<li><strong>Programa operativo:</strong> Leyenda que indica que se encuentra programa operativo en el sistema.</li>
-<li><strong>Campo año:</strong> Campo de tipo obligatorio que permite ingresar solamente caracteres numéricos y algunos especiales (, . - +) permitiendo anexar el año en el que se desea ver los arribos programados y la información relevante de ellos.</li>
-<li><strong>Campo semana:</strong> Campo no obligatorio que permite ingresar solamente caracteres numéricos y algunos especiales (, . - +) permitiendo anexar la semana en la que se desea ver los arribos programados y la información relevante de ellos.</li>
-<li><strong>Símbolo filtrar:</strong> Funciona de manera conjunta con los campos año y semana para así permitir el filtrado de los arribos programados por el año y la semana en el que se desea ver. (Se refleja como un botón de acción directa de color azul con el diseño clásico de un símbolo de filtro).</li>
-<li><strong>Opción de descarga de programa operativo:</strong> Permite descargar el programa operativo en diferentes formatos: PDF, Excel, Archivo delimitado por comas (CSV), Word.</li>
-<li><strong>Campo de filtro:</strong> Permite filtrar los arribos programados por el # de arribo, nave, identificador y los otros diversos campos que se encuentran en la tabla de arribos programados.</li>
-<li><strong>Simbolo refrescar:</strong> Funciona como un botón de acción que permite refrescar todo la información del apartado de arribos programados con la información en tiempo real. (Se refleja como un símbolo de una flecha circular que gira hacia la derecha).</li>
-<li><strong>Datos en pantalla:</strong> en este apartado se reflejan todos los datos importantes de programa operativo en tiempo real.
+<li><strong>Programa de atraques:</strong> Leyenda que indica que se encuentra el usuario en el programa de atraques en el sistema.</li>
+<li><strong>Rango de fechas:</strong> Campo de tipo obligatorio basado en dos diversas fechas controlables po el usuario para así poder filtrar los atraques programados en esa brecha de tiempo.</li>
+<li>
+<ul>
+<li><strong>Símbolo filtrar:</strong> Funciona de manera al campo anterior (<strong>Rango de fechas</strong>) y permite mostrar la filtración activa mediante el clic del mismo. (Se refleja como un botón de acción directa de color azul con el diseño clásico de un símbolo de filtro).</li>
+</ul>
+</li>
+<li><strong>Opción de descarga de programa de atraques:</strong> Permite descargar el programa de atraques en diferentes formatos: PDF, Excel, Archivo delimitado por comas (CSV), Word.</li>
+<li><strong>Campo de filtro:</strong> Permite filtrar los atraques programados por el # de atraque, nave, identificador y los otros diversos campos que se encuentran en la tabla de atraques programados.</li>
+<li><strong>Símbolo refrescar:</strong> Funciona como un botón de acción que permite refrescar todo la información del apartado de atraques programados con la información en tiempo real. (Se refleja como un símbolo de una flecha circular que gira hacia la derecha).</li>
+<li><strong>Datos en pantalla:</strong> en este apartado se reflejan todos los datos importantes de programa de atraques en tiempo real.
 <ol>
 <li><strong># de arribo:</strong> Número de arribo brindado por la empresa con el cual se puede manejar todo lo relacionado con el navio.</li>
 <li><strong>Nave:</strong> Nombre del navio que se encuentra tanto en sistema portuario como a nivel internacional.</li>
 <li><strong>Tipo:</strong> Tipo de navio reconocido tanto a nivel portuario como internacional.</li>
 <li><strong>Naviera:</strong> Nombre de la empresa naviera que posee el navio.</li>
 <li><strong>Estibador:</strong> Nombre del estibador que se encuentra a cargo del navio.</li>
+<li><strong>Puesto:</strong> Puesto en el que el barco debe atracar al momento de llegar  la terminal de carga.</li>
 <li><strong>E.T.A:</strong> A nivel portuario esto se reconoce como la E.T.A (Estimated Time of Arrival) y su función es reflejar la hora estimada de llegada del barco a la terminal de carga.</li>
-<li><strong>E.T.B:</strong> A nivel portuario esto se reconoce como la E.T.B (Estimated Time of Boarding) y la función principal de este apartado es reflejar la hora estimada de ubicación del barco en el puesto de carga.</li>
-<li><strong>E.T.C:</strong> A nivel portuario esto se reconoce como la E.T.C (Estimated Time of Completion) y su función en el sistema es reflejar la hora estimada de finalización de la operación del barco.</li>
-<li><strong>E.T.D:</strong> A nivel portuario esto se reconoce como la E.T.D (Estimated Time of Disembarkment) y su función es reflejar la hora estimada de salida del barco de la terminal de carga.</li>
+<li><strong>Hora estimada de atraque:</strong> Como su nombre indica, es ka hora estipulada en que el barco debe atracar.</li>
+<li><strong>Hora estimada desatraque:</strong> Como su nombre indica, es la hora estipulada en que el barco debe desatracar.</li>
+<li><strong>Eslora:</strong> Este apartado refleja la longitud del barco en metros.</li>
+<li><strong>Tiempo estimado en puesto:</strong> De manera muy sencilla se refleja el tiempo aproximado en horas en el que el barco se encontrara en el puesto de carga desde la hora de llegada hasta la hora de salida.</li>
 <li><strong>Calado proyectado:</strong> Este apartado refleja el calado proyectado del barco en el sistema portuario, es decir, la profundidad a la que se espera que se encuentre el barco en el agua.</li>
-<li><strong>Estadía estimada en horas:</strong> De manera muy sencilla se refleja el tiempo aproximado en horas en el que el barco se encontrara en el puesto de carga desde la hora de llegada hasta la hora de salida.</li>
 <li><strong>Estado:</strong> Este apartado refleja de manera directa el estado de la operación del barco (Confirmado o cancelado).</li>
 </ol>
 </li>
