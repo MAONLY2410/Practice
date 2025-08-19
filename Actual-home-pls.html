@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Actual-home-pls.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="breve-introducci%C3%B3n-sobre-lo-que-posee-la-pantalla-de-inicio">Breve introducción sobre lo que posee la pantalla de inicio</h1>
+<p>Esta pantalla tiene como objetivo mostrar cierta información relevante sobre el PLS <strong>(Port Logistic System)</strong> que es el sistema de gestión portuaria en desarrollo. Dicha pantalla se subdivide de forma visual en tres secciones prinicipales:</p>
+<ol>
+<li>Header (Información varia).</li>
+<li>Body (Información relevante). Que se subdivide en tres secciones:
+<ol>
+<li>Arribos Programados.</li>
+<li>Mis Procesos.</li>
+<li>Arribos Planificados.</li>
+</ol>
+</li>
+<li>Footer (Información varia legal).</li>
+</ol>
+<h1 id="header-informaci%C3%B3n-varia">Header (Información varia)</h1>
+<p>Esta sección tiene como objetivo reflejar ciertas configuraciones e información relevante tanto del sistema como del usuario que se encuentra en el sistema de gestión portuaria. Mostrando lo siguiente:</p>
+<ul>
+<li><strong>Menú de navegación (Oculto):</strong> Este menú se encuentra en la parte superior izquierda de la pantalla reflejado mediante un ícono de 3 líneas que se muestra solamente cuando el usuario le da clic en él, pero que se puede mostrar o ocultar en cualquier momento. Además de que cumple la misión de reflejar los diferentes menús que se puede acceder a través del sistema dependiendo del rol que posea el usuario y la información que tiene disponible en el sistema.</li>
+<li><strong>Home:</strong> Ícono que permite el acceder desde cualquier punto del sistema a la pantalla de inicio. (Se refleja como un botón con el diseño de una casa al lado del menú de navegación).</li>
+<li><strong>Nombre del sistema:</strong> Es el nombre del sistema de gestión portuaria en siglas que se encuentra en el sistema.</li>
+<li><strong>Ampliar:</strong> Ícono ubicado de lado derecho superior que permite tener una percepción más amplia de la información presente en la pantalla. (Se refleja como un botón con el diseño de un cuadrado seccionado).</li>
+<li><strong>Cambiar modo oscuro:</strong> Ícono ubicado de lado derecho superior que permite cambiar la tonalidad del sistema de forma clara o oscura para comodidad visual. (Se refleja como un botón de acción directa con el diseño de un círculo con una línea horizontal además de un ícono guía que indica el modo en el cual se encuentra el sistema).</li>
+<li><strong>Usuario actual logueado:</strong> Muestra el correo electrónico del usuario brindado por la empresa con el cual posee ciertas acciones en el sistema.</li>
+<li><strong>Cerrar sesión:</strong> Ícono ubicado de lado derecho superior que permite cerrar la sesión del usuario actual. (Se refleja como un botón de acción directa con el diseño de una puerta y una flecha).</li>
+</ul>
+<h1 id="body">Body</h1>
+<h2 id="body-parte-1-arribos-programados">Body Parte 1 (Arribos Programados)</h2>
+<p>Esta sección tiene como objetivo mostrar cierta información relevante sobre los arribos programados en el sistema de gestión portuaria. Mostrando lo siguiente:</p>
+<ul>
+<li><strong>Arribos programados:</strong> Leyenda que indica que se encuentran arribos programados en el sistema.</li>
+<li><strong>Campo año:</strong> Campo de tipo obligatorio que permite ingresar solamente caracteres numéricos y algunos especiales (, . - +) permitiendo anexar el año en el que se desea ver los arribos programados y la información relevante de ellos.</li>
+<li><strong>Campo semana:</strong> Campo no obligatorio que permite ingresar solamente caracteres numéricos y algunos especiales (, . - +) permitiendo anexar la semana en la que se desea ver los arribos programados y la información relevante de ellos.</li>
+<li><strong>Símbolo filtrar:</strong> Funciona de manera conjunta con los campos año y semana para así permitir el filtrado de los arribos programados por el año y la semana en el que se desea ver. (Se refleja como un botón de acción directa de color azul con el diseño clásico de un símbol de filtro).</li>
+<li><strong>Campo de filtro:</strong> Permite filtrar los arribos programados por el # de arribo, nave, identificador y los otros diversos campos que se encuentran en la tabla de arribos programados.</li>
+<li><strong>Símbolo que guía al programa operativo:</strong> Funciona como un botón de acción directa que tiene configurado de forma interna el redirigir al programa operativo actual del sistema de gestión portuaria. (Se refleja como un símbolo especial de una cuadrado con una flecha).</li>
+<li><strong>Símbolo de colapso:</strong> Funciona como un botón de acción que permite ocultar o mostrar toda la información del apartado de arribos programados. (Se refleja como un símbolo especial de una flecha que se mueve hacía abajo o hacía arriba).</li>
+<li><strong>Simbolo refrescar:</strong> Funciona como un botón de acción que permite refrescar todo la información del apartado de arribos programados con la información en tiempo real. (Se refleja como un símbolo de una flecha circular que gira hacia la derecha).</li>
+<li><strong>Datos en pantalla:</strong> En este apartado en especial se refleja toda la información en tiempo real de los arribos programados desde el nombre del navio hasta la fecha de finalización de trabajo de cada uno de ellos entre otros datos más que se explicaran a continuación.
+<ol>
+<li><strong># de arribo:</strong>: Número de arribo brindado por la empresa con el cual se puede manejar todo lo relacionado con el navio. Este número se confecciona con el año y un número de consecutivo. Ej --&gt; <strong>20250016</strong>.</li>
+<li><strong>Nave:</strong> Nombre del navio que se encuentra tanto en sistema portuario como a nivel internacional.</li>
+<li><strong>Identificador:</strong> Identificador del barco valido a nivel internacional como el número IMO, número de registro o número brindado por lae empresa.</li>
+<li><strong>Hora llegada:</strong> A nivel portuario esto se reconoce como la E.T.A (Estimated Time of Arrival) y su función es reflejar la hora estimada de llegada del barco a la terminal de carga. Además de que se refleja en el formato de 24 horas. Luego se compara con la A.T.A (Actual Time of Arrival) que es la hora real en que el barco llega a la terminal de carga.</li>
+<li><strong>Hora en puesto:</strong> A nivel portuario esto se reconoce como la E.T.B (Estimated Time of Boarding) y la función principal de este apartado es reflejar la hora estimada de ubicación del barco en el puestod de carga.</li>
+<li><strong>Hora fin operación:</strong> A nivel portuario este apartado se reconoce como la E.T.C (Estimated Time of Completion) y su función en el sistema es reflejar la hora estimada de finalización de la operación del barco.</li>
+<li><strong>Hora salida:</strong> A nivel portuario este apartado se reconoce como la E.T.D (Estimated Time of Disembarkment) y su función es reflejar la hora estimada de salida del barco de la terminal de carga.</li>
+<li><strong>Estadía en horas:</strong> De manera muy sencilla se refleja el tiempo aproximado en horas en el que el barco se encontrara en el puesto de carga desde la hora de llegada hasta la hora de salida.</li>
+<li><strong>Calado proyectado:</strong> El calado proyectado se refiere a la cantidad de agua que el barco necesita para poder navegar de manera segura sin tocar el fondo marino. Este dato es proporcionado por el capitán del barco y es crucial para garantizar la seguridad durante las operaciones portuarias.</li>
+<li><strong>Estado</strong>: Este apartado refleja de manera directa el estado de la operación del barco (Confirmado o cancelado).</li>
+</ol>
+</li>
+</ul>
+<p><strong>Observación:</strong> Todos los datos mencionados con anterioridad poseen la chance de ser ordenados de forma ascendente o descendente o dejarlos como se están reflejando por defecto.</p>
+<ul>
+<li><strong>Items por página:</strong> Permite cambiar el número de elementos que se muestran en cada página del apartado de arribos programados. Yendo desde 5 a 15 por ejemplo.</li>
+<li><strong>Símbolo siguiente:</strong> Permite ir a la siguiente página del apartado de arribos programados. Reflejado como una flecha que apunta hacía la derecha.</li>
+<li><strong>Símbolo anterior:</strong> Permite ir a la página anterior del apartado de arribos programados. Reflejado como una flecha que apunta hacía la izquierda.</li>
+<li><strong>Símbolo saltar a la primera página:</strong> Permite ir a la primera página del apartado de arribos programados. Reflejado mediante una flecha y una línea apuntando hacía la derecha</li>
+<li><strong>Símbolo saltar a la última página:</strong> Permite ir a la última página del apartado de arribos programados. Reflejado mediante una flecha y una línea apuntando hacía la izquierda.</li>
+</ul>
+<h2 id="body-parte-2-mis-procesos">Body Parte 2 (Mis procesos)</h2>
+<p>Esta sección tiene como función mostrar toda la información relevante generada por parte del usuario logueado en el sistema de gestión portuaria. Mostrando lo siguiente:</p>
+<ul>
+<li><strong>Mis procesos:</strong> Leyenda que indica que se encuentran procesos en el sistema.</li>
+<li><strong>Símbolo que guía a mis procesos:</strong> Funciona como un botón de acción directa que tiene configurado de forma interna el redirigir a la sección de mis procesos del sistema de gestión portuaria. (Se refleja como un símbolo especial de una cuadrado con una flecha).</li>
+<li><strong>Símbolo de colapso:</strong> Funciona como un botón de acción que permite ocultar o mostrar toda la información del apartado de arribos programados. (Se refleja como un símbolo especial de una flecha que se mueve hacía abajo o hacía arriba).</li>
+<li><strong>Campo de filtro:</strong> Permite filtrar los procesos por los diversos campos que se encuentran en la tabla de procesos.</li>
+<li><strong>Simbolo refrescar:</strong> Funciona como un botón de acción que permite refrescar todo la información del apartado de arribos programados con la información en tiempo real. (Se refleja como un símbolo de una flecha circular que gira hacia la derecha).</li>
+<li><strong>Código:</strong>: (Me falta información).</li>
+<li><strong>Tipo:</strong> (Me falta información).</li>
+<li><strong>Descripción:</strong> Describe brevemente el proceso ligado al código.</li>
+<li><strong>Fecha de registro:</strong> Fecha en la que se registró el proceso en el sistema.</li>
+<li><strong>Estado:</strong> Estado del proceso en el sistema. (Me falta información).</li>
+<li><strong>Items por página:</strong> Permite cambiar el número de elementos que se muestran en cada página del apartado de arribos programados. Yendo desde 5 a 15 por ejemplo.</li>
+<li><strong>Símbolo siguiente:</strong> Permite ir a la siguiente página del apartado de arribos programados. Reflejado como una flecha que apunta hacía la derecha.</li>
+<li><strong>Símbolo anterior:</strong> Permite ir a la página anterior del apartado de arribos programados. Reflejado como una flecha que apunta hacía la izquierda.</li>
+<li><strong>Símbolo saltar a la primera página:</strong> Permite ir a la primera página del apartado de arribos programados. Reflejado mediante una flecha y una línea apuntando hacía la derecha</li>
+<li><strong>Símbolo saltar a la última página:</strong> Permite ir a la última página del apartado de arribos programados. Reflejado mediante una flecha y una línea apuntando hacía la izquierda.</li>
+</ul>
+<h2 id="body-parte-3-arribos-planificados">Body Parte 3 (Arribos Planificados)</h2>
+<p>Sección dirigida a mostrar de manera más visual mediante gráfico de barras los arribos programados en el sistema e información relevante sobre ellos.</p>
+<ul>
+<li><strong>Arribos planificados:</strong> Leyenda que indica que se encuentran arribos planificados en el sistema.</li>
+<li><strong>Símbolo refrescar:</strong> Funciona como un botón de acción que permite refrescar todo la información del apartado de arribos programados con la información en tiempo real. (Se refleja como un símbolo de una flecha circular que gira hacia la derecha).</li>
+<li><strong>Ícono de zoom +:</strong> Funciona como un botón de acción que permite aumentar el zoom del gráfico de arribos planificados. Reflejado como un símbol de + que cada vez que se le presiona aumenta el tamaño del gráfico.</li>
+<li><strong>Ícono de zoom -:</strong> Funciona como un botón de acción que permite disminuir el zoom del gráfico de arribos planificados. Reflejado como un símbol de - que cada vez que se le presiona disminuye el tamaño del gráfico.</li>
+<li><strong>Ícono de panning:</strong> Funciona como un botón de acción que permite mover el gráfico de arribos planificados. Reflejado en el sistema como un ícono de una mano.</li>
+<li><strong>Ícono resetear vista:</strong> Funciona como un botón de acción que permite de manera directa resetear la vista del gráfico a su estado original. Reflejado como un símbolo de una casa.</li>
+<li><strong>Ícono de descarga de gráfico:</strong> Ícono que como su nombre indica permite la descarga del gráfico en formato SVG o PNG. Reflejado como un símbolo de tres líneas horizontales.</li>
+</ul>
+<h3 id="campos-en-el-gr%C3%A1fico">Campos en el gráfico</h3>
+<ul>
+<li><strong># arribo:</strong> Ubicado de lado izquierdo como una columna.</li>
+<li><strong>Gráfico de barras horizontales:</strong> Proyectado como una columna la cual muestra en diversos colores los navios planificados. además de que el tamaño de las mismas refleja la duración del barco en estadía. Sumado a eso si se coloca sobre la barra el número del # arribo, nombre de la nave, naviera, hora en puesto, hora salida entre otros datos.</li>
+<li><strong>Día/Mes/Año:</strong> En la parte inferior al gráfico se encontraron las fechas guía que permite una comprensión más cercana a la estadía del barco en el puesto de carga.</li>
+<li><strong>Guía del color:</strong> En una posición inferior a la anterior se encuentra la guía de color la cual tiene como objetivo relacionar el nombre del barco con la barra que representa su estadía con un círculo del mismo color de esta barra.</li>
+</ul>
+<h1 id="footer">Footer</h1>
+<p>Sección que tiene como objetivo reflejar ciertas información relevante del sistema de gestión portuaria. Mostrando lo siguiente:</p>
+<ul>
+<li><strong>Nombre del sistema:</strong> Es el nombre del sistema de gestión portuaria en siglas que se encuentra en el sistema.</li>
+<li><strong>Copyright:</strong> Muestra el copyright del sistema y el año de su creación.</li>
+</ul>
+
+</body>
+</html>
