@@ -75,7 +75,7 @@ Sección dirigida a mostrar de manera más visual mediante gráfico de barras lo
 * **Gráfico de barras horizontales:** Proyectado como una columna la cual muestra en diversos colores los navios planificados. además de que el tamaño de las mismas refleja la duración del barco en estadía. Sumado a eso si se coloca sobre la barra el número del # arribo, nombre de la nave, naviera, hora en puesto, hora salida entre otros datos.
 * **Día/Mes/Año:** En la parte inferior al gráfico se encontraron las fechas guía que permite una comprensión más cercana a la estadía del barco en el puesto de carga.
 * **Guía del color:** En una posición inferior a la anterior se encuentra la guía de color la cual tiene como objetivo relacionar el nombre del barco con la barra que representa su estadía con un círculo del mismo color de esta barra.
-# Footer
+# Footer (Información varia legal)
 Sección que tiene como objetivo reflejar ciertas información relevante del sistema de gestión portuaria. Mostrando lo siguiente:
 * **Nombre del sistema:** Es el nombre del sistema de gestión portuaria en siglas que se encuentra en el sistema.
 * **Copyright:** Muestra el copyright del sistema y el año de su creación.
