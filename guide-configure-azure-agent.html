@@ -368,59 +368,66 @@ code {
 <h1 id="configuraci%C3%B3n-de-un-agente-de-azure-devops">Configuración de un agente de Azure DevOps</h1>
 <ol>
 <li>Acceder a Azure Devops e iniciar sesión con la cuenta de usuario que desee configurar el agente.</li>
-<li>Entramos a un proyecto iniciado o generamos uno nuevo.</li>
-<li>Le damos clic en &quot;Project Settings&quot; (Abajo a la izquierda).</li>
-<li>Seleccionamos &quot;Agent Pools&quot;.</li>
+<li>Una vez logueado vamos a la sección <strong>settings</strong> y buscamos en la sección de pipelines la que diga <strong>Agent pools</strong>.</li>
 <li>Clic en la opción &quot;Add Pool&quot; Sí vamos a crear uno nuevo.</li>
-<li>Le brindamos un nombre identificativo al agente pool &quot;Ej. WindowsServerPool&quot; y agregar.</li>
-<li>En Azure DevOps, dentro del &quot;Agent Pool&quot;, damos clic en &quot;New Agent&quot;.</li>
-<li>Seleccionamos el Sistema Operativo que deseamos usar en este caso Windows.</li>
+<li>Seleccionamos el tipo de pool que queremos crear en es caso seria <strong>Self-hosted</strong>.</li>
+<li>Le brindamos un nombre identificativo al agente pool &quot;Ej. WindowsServerPool&quot; y una descripción (Opcional) y le damos clic en create.</li>
+<li>Dentro del nuevo agente creado, damos clic en &quot;New Agent&quot;.</li>
+<li>Seleccionamos el Sistema Operativo y la versión que deseamos usar en este caso Windows.</li>
 <li>Descargamos el archivo ZIP del agente el cuál puede tener un nombre similar a &quot;vsts-agent-win-x64-2.164.2.zip&quot;.</li>
 <li>Copiamos dicho archivo al servidor/máquina donde queremos instalar el agente.</li>
 </ol>
-<h1 id="configuraci%C3%B3n-b%C3%A1sica-por-medio-del-cmd">Configuración básica por medio del CMD</h1>
+<h1 id="instalaci%C3%B3n-y-configuraci%C3%B3n-del-agente">Instalación y configuración del agente</h1>
 <ol>
-<li>Después de descargar el archivo, lo descomprimimos y dentro de esa carpeta abrimos una ventana CMD donde ejecutamos el siguiente comando: &quot;.\config.cmd&quot;</li>
+<li>Una vez descargado el agente, lo descomprimimos en la carpeta de alojamiento deseada Ej. Descargas/</li>
+<li>Dentro de la carpeta descomprimida abrimos una ventana de CMD como administrador.</li>
+<li>Ejecutamos el siguiente comando: &quot;.\config.cmd&quot; y enter.</li>
+<li>Lo primero que nos solicita es la URL del azure devops que donde queremos configurar el agente, la url es algo similar a &quot;https://dev.azure.com/tu-proyecto&quot;</li>
+<li>Lo siguiente que solicita es el PAT (Personal Access Token) que se genera dentro del pool creado en los  (3, 4, 5 de la primera sección).</li>
+<li>Para generar el PAT nos dirigimos a la opción superior derecha al lado del ícono de usuario y seleccionamos &quot;User Settings&quot;.</li>
+<li>Daremos clic en ese ícono y observaremos varias opciones, la importante en este caso es la opción de &quot;Personal Access Tokens&quot;.</li>
+<li>Dentro de esta observaremos todos los tokens que tenemos disponibles, pero necesitamos uno nuevo por ende le daremos clic en &quot;New Token&quot;.</li>
+<li>Le brindamos un nombre significativo Ej <strong>&quot;WindowsServerTkn&quot;</strong>, la organización, tiempo de expiración en (UTC) y todas las opciones que sean apropiadas.</li>
+<li>En las opciones de permisos seleccionaremos las siguientes:</li>
 </ol>
-<h2 id="durante-la-configuraci%C3%B3n-en-el-cmd-se-debe-de-seguir-los-siguiente-pasos">Durante la configuración en el CMD se debe de seguir los siguiente pasos:</h2>
-<ol>
-<li>Introducir la URL de la organización &quot;Ej. https://dev.azure.com/maonly-org/&quot;</li>
-<li>Introducir el PAT (Personal Access Token) de la cuenta de usuario que deseamos configurar en el agente.
-<ol>
-<li>Para generar un PAT nos dirigimos al perfil de la cuenta del usuario y seleccionamos el apartado &quot;Security&quot; y luego &quot;Personal Access Tokens&quot; y le damos clcic en &quot;+ New Token&quot;.</li>
-<li>Para la configuración del token usaremos como nombre del mismo &quot;Ej. Windows2012AgentTkn&quot;.</li>
-<li>Seleccionamos la orgnanización en este caso la propia.</li>
-<li>Le brindamos una expiración de tiempo al token que se adapte a la necesidad.</li>
-<li>Los scopes que se deben de seleccionar de manera directa son &quot;Agent Pools (Read &amp; manage)&quot;, &quot;Deployments (Read &amp; manage)&quot; y &quot;Build (Opcional) de (Read &amp; manage) para el uso de pipeline&quot;.</li>
+<ul>
+<li>Agents Pools (Read &amp; manage).</li>
+<li>Deployment groups (Read &amp; manage).</li>
+<li>Build (Opcional) (Read &amp; manage).</li>
+</ul>
+<ol start="11">
+<li>Con todo ya configurado le damos clic en &quot;Create&quot;.</li>
+<li>Al darle clic en &quot;create&quot; nos aparecerá un nuevo token que debemos de copiar y guardar en un lugar seguro ya que requeriremos de este en la configuración del agente.</li>
+<li>Continuando con el paso #4 una vez con el token obtenido nos dirigimos al cmd y le damos enter (Para que reconozca que queremos usar un PAT).</li>
+<li>Copiamos el token generado y le damos enter. (Aparece en formato de asteriscos).</li>
+<li>Seguido a esto nos solicitara el nombre del pool que queremos usar, en este caso sería <strong>WindowsServerPool</strong> y le damos enter.</li>
+<li>Después solicitara el nommbre del agente que queremos usar, en este caso sería <strong>WindowsServerAgent</strong> y le damos enter. (Puede ser cualquier nombre).</li>
+<li>Casi terminando el proceso lo que nos solicitara es que si deseamos trabajar localmente en la carpeta &quot;_work&quot; u otra carpeta, para fines de guía lo dejaremos como está con _work por defecto y le damos enter. (Enter por defecto es _work).</li>
+<li>Si deseamos que sea un agente que funcione como un servicio de nuestro equipo tendremos que escribir &quot;Y&quot; y le damos enter.</li>
+<li>Después nos saldrá esta opción <strong>Enter enable SERVICE_SID_TYPE_UNRESTRICTED for agent service (Y/N) (press enter for N)</strong> que en resumidas cuenta es sí deseamos dar permisos de administrador al servicio, por ende suele quedar a decisión de cada usuario, en este caso como el paso anterior escribimos &quot;Y&quot; y damos enter.</li>
+<li>Después aparecerá la opción de <strong>Enter User account tio use fot the service (press enter for NT AUTHORITY\NETWORK SERVICE)</strong> en este caso escribiremos un usuario que tenga permisos de administrador o si no deseamos dar ese permiso dejamos vacío el campo y le damos enter. (Por defecto es NT AUTHORITY\NETWORK SERVICE).</li>
+<li>Nos solicitará la contraseña del usuario que elegimos, en este caso la contraseña de administrador.</li>
+<li><strong>Enter whether to prevent service starting immediately after configuration is finished?</strong> Esta opción nos permite que el servicio no se inicie inmediatamente después de que se haya configurado, en este caso la opción por defecto es &quot;N&quot; si le damos enter, pero recae directamente a decisión de cada usuario. (Por funcionamiento de la guía escribiremos &quot;Y&quot; y le damos enter).</li>
 </ol>
-</li>
-<li>Le brindamos un nombre distintivo al agente &quot;Ej. Windows2012Agent&quot;.</li>
-<li>Usamos el mismo nommbre de pool que creamos con anterioridad &quot;WindowsServerPool&quot;.</li>
-</ol>
-<h1 id="ejecuci%C3%B3n-del-agente">Ejecución del agente</h1>
+<h1 id="ejecuci%C3%B3n-del-agente-s%C3%AD-es-manual">Ejecución del agente (Sí es manual)</h1>
 <ol>
 <li>Abrimos una ventada de CMD como administrador.</li>
+<li>Realizamos toda la configuración anterior hasta el paso 17. (&quot;N&quot; en todas las opciones mencionadas a partir del paso 18).</li>
 <li>Navegamos a la carpeta donde se encuentra el agente descargado.</li>
 <li>Ejecutamos el siguiente comando: &quot;.\run.cmd&quot; y enter.</li>
 </ol>
-<h1 id="instalaci%C3%B3n-del-agente-como-un-servicio-propio-del-sistema-opcional">Instalación del agente como un servicio propio del sistema (Opcional)</h1>
+<h1 id="verificar-si-el-agente-est%C3%A1-funcionando-como-servicio">Verificar si el agente está funcionando como servicio.</h1>
 <ol>
-<li>En la misma carpeta del agente ejecutamos el siguiente comando: &quot;svc install&quot;</li>
-<li>Luego iniciamos el servicio con el siguiente comando: &quot;svc start&quot;</li>
+<li>Abrimos el la búsqueda de Windows y escribimos &quot;services.msc&quot; y le damos enter.</li>
+<li>Dentro de la ventana de servicios buscamos algo como lo siguiente <strong>vstsagent.usuario.WindowsServerPool.WindowsServerAgent</strong>.</li>
+<li>Si no se encuentra iniciado lo iniciamos y configuramos para que funcione de manera automática cada vez que se reinicie el equipo.</li>
 </ol>
-<h1 id="extras-opcional">Extras (Opcional)</h1>
-<h2 id="extra-1-verificaci%C3%B3n-de-instalaci%C3%B3n-como-servicio-en-windows">Extra 1: Verificación de instalación como servicio en Windows</h2>
+<h1 id="eliminar-el-agente-y-volver-a-configurarlo">Eliminar el agente y volver a configurarlo.</h1>
 <ol>
-<li>Ejecutamos administrador de servicios &quot;services.msc&quot; y buscamos el servicio que puede tener la siguiente apariencia: &quot;vsts-agent-win-x64-2.164.2&quot;.</li>
-</ol>
-<h2 id="extra-2-reinicio-autom%C3%A1tico-del-agente-en-caso-de-fallo">Extra 2 Reinicio automático del agente en caso de fallo</h2>
-<ol>
-<li>abrimos menú de inicio y escribimos &quot;services.msc&quot; y buscamos el servicio que puede tener la siguiente apariencia: &quot;vsts-agent-win-x64-2.164.2&quot;.</li>
-<li>Clic derecho sobre el servicio y seleccionamos la opción de &quot;Propiedades&quot;.</li>
-<li>Vamos a la pestaña de &quot;Recuperación&quot;.</li>
-<li>Dentro de la pestaña anterior en las opciones &quot;Fallo al primer intento&quot;, &quot;Segundo intento&quot;, &quot;Siguientes intentos&quot; seleccionamos &quot;Reiniciar el servicio&quot;.</li>
-<li>Ajustamos el tiempo de espera antes de reiniciar el servicio en caso de fallo, &quot;Ej. 1 minuto&quot;.</li>
-<li>Damos clic en &quot;Aplicar y aceptar&quot;.</li>
+<li>Dentro de la carpeta que se encuentra alojado el agente abrimos una ventana de CMD como administrador.</li>
+<li>Ejecutamos el siguiente comando: &quot;.config.cmd remove --auth PAT --token &quot;Tkn-generado&quot; y enter.</li>
+<li>Lo que se ejecutará en el paso anterior es que se define que el tipo de autorización es el PAT y le brindaremos el token de acceso generado en la explicación anterior. (Por eso se recomienda guardarlo en un lugar seguro y accesible).</li>
+<li>Para saber si se ha eliminado el agente de nuestro equipo, abrimos los servicios de Windows y buscamos el servicio relacionado al agente que acabamos de eliminar.</li>
 </ol>
 
 </body>
