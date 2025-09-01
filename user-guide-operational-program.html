@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Usuario - Pantalla Programa Operativo</title>
+    <style>
+        /* Estilos simples y accesibles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            background-color: #f8f9fa;
+            padding: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .paso {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .numero-paso {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .consejo {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .advertencia {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+
+        /* Estilo para botones/interacciones */
+        .boton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Guía de Usuario - Programa Operativo</h1>
+        <p>Bienvenido a la guía de usuario para la pantalla de <strong>Programa Operativo</strong> del sistema PLS. Esta
+            guía esta diseñada para ayudarte a utilizar y comprender de una forma más sencilla y directa las diversas
+            características que ofrece esta pantalla en concreto.</p>
+    </header>
+
+    <nav>
+        <h2>Contenido</h2>
+        <ul>
+            <li><a href="#seccion1">1. Introducción</a></li>
+            <li><a href="#seccion2">2. Funciones principales</a></li>
+            <li><a href="#seccion3">3. Contacto y soporte</a></li>
+        </ul>
+    </nav>
+
+    <section id="seccion1">
+        <h2>1. Introducción</h2>
+        <p>La pantalla <strong>Programa Operativo</strong> se encuentra directamente como una opción principal en el
+            menú de inicio con el mismo nombre de la pantalla y ofrece una vista total de un programa
+            de arribo brindando información detallada sobre las diversas embarcaciones.</p>
+        <img src="img/operational-program/operational-program-1.png" alt="Pantalla Programa Operativo">
+        <div class="consejo">
+            <strong>Consejo:</strong> Esta guía está diseñada para ser leída en orden, pero puedes saltar a las
+            secciones que necesites usando el menú de contenido.
+        </div>
+    </section>
+
+    <section id="seccion2">
+        <h2>2. Funciones principales</h2>
+
+        <div class="paso">
+            <span class="numero-paso">1</span>
+            <h3>Función básica</h3>
+            <p>Para realizar la función principal:</p>
+            <ol>
+                <li>Haz clic en <span class="boton" style="background-color: #1976d2;">Descargar</span></li>
+                <li>Seleccionamos en qué tipo de archivo deseamos realizar la descarga del programa operativo y se
+                    iniciara la descarga del mismo inmediatamente.</li>
+            </ol>
+            <img src="img/operational-program/operational-program-2.png" alt="Opción de descarga">
+            <img src="img/operational-program/operational-program-3.png" alt="Descarga de archivo">
+            <img src="img/operational-program/operational-program-4.png" alt="Archivo descargado">
+        </div>
+
+        <div class="paso">
+            <span class="numero-paso">2</span>
+            <h3>Visualización de información en pantalla de Programa Operativo</h3>
+            <p>Como se puede observar de primera mano la pantalla actual solamente proyecta información previamente
+                registrada en otros sistemas de la empresa y no permite la edición de datos
+                por ende funciona solamente como una vista de datos aunque tiene funciones básicas de búsqueda y
+                filtrado.
+            </p>
+            <ol>
+                <li>La primera función básica que podemos encontrar es el filtrado por <strong>año</strong> y
+                    <strong>semana</strong> donde el único campo obligatorio que solicita esta sección es el de
+                    <strong>año</strong>
+                    y que una vez se rellenen los campos estipulados se realiza el filtro dando clic en el ícono de
+                    filtro que se encuentra al lado del campo de <strong>semana.</strong>
+                </li>
+                <img src="img/operational-program/operational-program-5.png" alt="Filtro de información">
+                <div class="advertencia">
+                    <strong>Advertencia:</strong> El campo de <strong>año</strong> es de índole obligatorio en todo
+                    filtrado a realizar. Además de que ambos campos solamente permiten el ingreso de números.
+                </div>
+                <li>La segunda función básica de filtrado se encuetra en un espacio llamado <strong>Filtro</strong> el
+                    cual como su nombre indica, permite filtrar por los diversos campos que posee
+                    el programa operativo.</li>
+                <img src="img/operational-program/operational-program-6.png" alt="Filtro de información en programa">
+                <li>Dentro de las escasas funciones de esta pantalla se encuentra la de <strong>Refrescar</strong> la
+                    cual funciona en tiempo real refrescando la información al momento con la última información
+                    registrada en el sistema.</li>
+                <img src="img/operational-program/operational-program-7.png" alt="Refrescar información">
+                <li>Dentro de está pantalla se encuentra un cúmulo de datos e información valiosa la cuál se explicara a
+                    continuación de manera resumida<strong>(yendo de izquierda a
+                        derecha):</strong></li>
+                <ol>
+                    <li><strong># de arribo: </strong>Identificador único brindado por la empresa a las diversas
+                        embarcaciones que se compone por el año y un número de consecutivo.</li>
+                    <li><strong>Nave: </strong>Nombre de la embarcación registrado en el sistema.</li>
+                    <li><strong>Calado: </strong>Este dato debe ser proyectado en metros.</li>
+                    <li><strong>Identificador: </strong>Número de identificación a nivel internacional que posee la
+                        embarcación, por lo general se usa el <strong>IMO</strong>, pero se puede hacer uso de
+                        cualquiera siempre y cuando cumpla con las normas internacionales.</li>
+                    <li><strong>Naviero: </strong>Nombre de la empresa que posee la embarcación.</li>
+                    <li><strong>Hora llegada: </strong>Reconocido como E.T.A (Estimated Time of Arrival) es la hora
+                        esperada de llegada de la embarcación a bahía.</li>
+                    <li><strong>Hora en puesto: </strong>Reconocido como A.T.B (Actual Time of Berthing) es la hora en
+                        que el navio se encuentra en el puesto designado.</li>
+                    <li><strong>Hora fin operación: </strong>Reconocido como E.T.C (Estimated Time of Completion) es la
+                        hora estimada de finalización de la operación.</li>
+                    <li><strong>Hora salida: </strong>E.T.D (Estimated Time of Departure) es la hora estimada de salida
+                        de la embarcación.</li>
+                    <li><strong>Estadía (Horas): </strong>Es el tiempo estimado que necesita estar la embarcación para
+                        cumplir todos los requisitos de la operación.</li>
+                    <li><strong>Calado proyectado: </strong>Profundidad máxima necesaria para que el barco pueda
+                        maniobrar libremente en el agua en metros.</li>
+                    <li><strong>Tipo de nave: </strong>Marca la diferencia entre las distintas clases de embarcaciones,
+                        por ejemplo: Portacontenedor, crucero, granel sólido.</li>
+                    <li><strong>Estado: </strong>Refleja de manera clara el estado en el cual se encuentra la
+                        embarcación al momento de visualizar la información en la pantalla.</li>
+                </ol>
+                <img src="img/operational-program/operational-program-8.png" alt="Datos proyectados">
+        </div>
+    </section>
+
+    <section id="seccion3">
+        <h2>3. Contacto y soporte</h2>
+        <p>Si necesitas ayuda adicional, contáctanos:</p>
+        <ul>
+            <li><strong>Correo electrónico:</strong> soporte@empresa.com</li>
+            <li><strong>Teléfono:</strong> +1 (123) 456-7890</li>
+            <li><strong>Horario de atención:</strong> Lunes a Viernes, 9am - 5pm</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 JAPDEVA. Todos los derechos reservados.</p>
+        <p>Versión de la guía: 1.0 | Última actualización: 24/07/2025</p>
+    </footer>
+</body>
+
+</html>
