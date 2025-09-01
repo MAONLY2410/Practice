@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Usuario - [Nombre de Pantalla]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            background-color: #f8f9fa;
+            padding: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .paso {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .numero-paso {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .consejo {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .advertencia {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+
+        .boton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Guía de Usuario - Inspección de Contenedor</h1>
+        <p>Bienvenido a la guía de usuario para la pantalla <strong>Inspección de Contenedor</strong> del sistema PLS.
+            Esta guía está diseñada para ayudarte a utilizar y comprender de forma sencilla y directa las
+            funcionalidades que ofrece esta pantalla.</p>
+    </header>
+
+    <nav>
+        <h2>Contenido</h2>
+        <ul>
+            <li><a href="#seccion1">1. Introducción</a></li>
+            <li><a href="#seccion2">2. Funciones principales</a></li>
+            <li><a href="#seccion3">3. Solución de problemas</a></li>
+            <li><a href="#seccion4">4. Contacto y soporte</a></li>
+        </ul>
+    </nav>
+
+    <section id="seccion1">
+        <h2>1. Introducción</h2>
+        <p>La función principa de esta pantalla es reflejar mediante una forma ordenada y al detalle toda la información
+            relevante relacionada con un contenedor en cierta ventana de tiempo definido.</p>
+        <img src="img/gate-inspections/gate-ins-1.png" alt="Pantalla de Inspección de Contenedor">
+        <div class="consejo">
+            <strong>Consejo:</strong> Esta guía está diseñada para ser leída en orden, pero puedes saltar a las
+            secciones que necesites usando el menú de contenido.
+        </div>
+    </section>
+
+    <section id="seccion2">
+        <h2>2. Funciones principales</h2>
+        <!-- Ejemplo de paso -->
+        <div class="paso">
+            <span class="numero-paso">1</span>
+            <h3>Realizar la búsqueda de un contenedor</h3>
+            <p>Al brindarle el código de identificación del contenedor deseado y pulsar seguido a ello el botón de
+                búsqueda podremos visualizar toda la información relevante a ese contenedor basado en la ventana de
+                tiempo definida en conjunto a esta acción.</p>
+            <img src="img/gate-inspections/gate-ins-2.png" alt="Búsqueda de contenedor">
+        </div>
+        <div class="paso">
+            <span class="numero-paso">2</span>
+            <h3>Control de información a proyectar en la pantalla Inspección de Contenedor</h3>
+            <p>Primero antes que nada se debe dejar claro que la información a ver en la pantalla se encuentra ligada
+                totalmente a la ventana de tiempo estipulada por el usuario y al contenedor deseado por el mismo, además
+                de que la información proyectada es la más reciente almacenada en la base de datos.</p>
+            <img src="img/gate-inspections/gate-ins-3.png" alt="Datos de la nave controlados">
+        </div>
+        <div class="advertencia">
+            <strong>Advertencia:</strong> Ambos datos para el control de información a proyectar <u>(contenedor y rango
+                de fechas)</u> son de índole obligatorias.
+        </div>
+        <div class="paso">
+            <span class="numero-paso">3</span>
+            <h3>Filtrar y refrescar la información</h3>
+            <p>La pantalla también ofrece la posibilidad de fiiltrar por cualquier atributo y refrescar la información
+                en tiempo real permitiendo al usuario encontrar y visualizar datos actualizados de forma rápida y
+                sencilla.</p>
+                <img src="img/gate-inspections/gate-ins-4.png" alt="Filtro de información">
+        </div>
+        <div class="paso">
+            <span class="numero-paso">4</span>
+            <h3>Visualización de información en pantalla Inspección de Contenedor</h3>
+            <p>Como se puede observar la pantalla <strong>Inspección de Contenedor</strong> posee una tabla de datos como mucha información por eso en este apartado se explica de manera sencilla cada uno de estos atributos. <strong><u>(De izquierda a derecha).</u></strong></p>
+            <ol>
+                <li><strong>Número de contenedor: </strong>Como su nombre indica, este es el número o código único de identificación del contenedor ingresado por el usuario.</li>
+                <li><strong>Arribo: </strong>Refleja cuando fue la llegada del contenedor al puerto respectivo.</li>
+                <li><strong>Naviera: </strong>Muestra quién fue la agencia naviera encargada de su movimiento.</li>
+                <li><strong>Tipo de operación: </strong> Si el contenedor en cuestión fue trabajado en una operación en importación o exportación.</li>
+                <li><strong>Tamaño: </strong>Tamaño del contenedor en pies. <strong>Ejemplo: 40 pies.</strong></li>
+                <li><strong>Peso: </strong>Peso de contenedor en toneladas fijas.</li>
+                <li><strong>Lleno/vacío: </strong>Refleja si el contenedor consultado se esta lleno o vacío al momento de su llegada o salida.</li>
+                <li><strong>Fecha de registro: </strong>Denota la fecha en que el contenedor fue registrado en el sistema.</li>
+                <li><strong>Estado: </strong>Estado en el que se encuentra el contenedor en el momento de su llegada o salida.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="seccion4">
+        <h2>4. Contacto y soporte</h2>
+        <p>Si necesitas ayuda adicional, contáctanos:</p>
+        <ul>
+            <li><strong>Correo electrónico:</strong> soporte@empresa.com</li>
+            <li><strong>Teléfono:</strong> +1 (123) 456-7890</li>
+            <li><strong>Horario de atención:</strong> Lunes a Viernes, 9 am - 5 pm</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 JAPDEVA. Todos los derechos reservados.</p>
+        <p>Versión de la guía: 1.0 | Última actualización: [Fecha]</p>
+    </footer>
+</body>
+
+</html>
