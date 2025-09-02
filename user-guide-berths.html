@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Usuario - Atracaderos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            background-color: #f8f9fa;
+            padding: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .paso {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .numero-paso {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .consejo {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .advertencia {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+
+        .boton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Guía de Usuario - Atracaderos</h1>
+        <p>Bienvenido a la guía de usuario para la pantalla <strong>Atracaderos</strong> del sistema PLS. Esta guía está
+            diseñada para ayudarte a utilizar y comprender de forma sencilla y directa las funcionalidades que ofrece
+            esta pantalla.</p>
+    </header>
+
+    <nav>
+        <h2>Contenido</h2>
+        <ul>
+            <li><a href="#seccion1">1. Introducción</a></li>
+            <li><a href="#seccion2">2. Funciones principales</a></li>
+            <li><a href="#seccion3">3. Contacto y soporte</a></li>
+        </ul>
+    </nav>
+
+    <section id="seccion1">
+        <h2>1. Introducción</h2>
+        <p>La pantalla de <u>Atracaderos</u> se encuentra dentro del submenú <strong>Almacenamiento de Datos</strong> y
+            lo que brinda principalmente es la posibilidad de registrar, editar, eliminar y ver información de los
+            atracaderos existentes en los diversos puertos de <strong>JAPDEVA</strong>.</p>
+        <img src="img/berths/berths-0.png" alt="Pantalla de Atracaderos">
+        <div class="consejo">
+            <strong>Consejo:</strong> Esta guía está diseñada para ser leída en orden, pero puedes saltar a las
+            secciones que necesites usando el menú de contenido.
+        </div>
+    </section>
+
+    <section id="seccion2">
+        <h2>2. Funciones principales</h2>
+        <div class="paso">
+            <span class="numero-paso">1</span>
+            <h3></h3>
+            <p>Registro de un nuevo atracadero</p>
+            <ol>
+                <li>Dentro de la pantalla de <strong>Atracaderos</strong> nos situamos sobre el botón <u>Menú</u> y le
+                    damos clic para acceder a la opción de <u>Registro nuevo</u> y sobre esta nueva opción también damos
+                    clic.</li>
+                <img src="img/berths/berths-1.png" alt="Botón menú">
+                <img src="img/berths/berths-2.png" alt="Botón Registrar">
+                <li>Una vez dentro de la pantalla de nuevo registro se debe de rellenar todos los datos necesarios para
+                    que el registro de este nuevo atracadero sea exitoso.</li>
+                <li>Pero antes de rellenar los datos del atracadero veamos cómo es la pantalla de registro de un nuevo
+                    atracadero.</li>
+                <img src="img/berths/berths-3.png" alt="Pantalla registro de un nuevo atracadero">
+                <strong>
+                    <li>Con lo anterior claro, es momento de comenzar con el registro de los datos para un nuevo
+                        atracadero.</li>
+                </strong>
+            </ol>
+            <h2><strong>Registro de Atracadero</strong></h2>
+            <ol>
+                <li><strong>Muelle: </strong>Se debe de seleccionar en que muelle se encuentra ubicado el atracadero
+                    según la lista brindada por el sistema al momento de su registro.</li>
+                <img src="img/berths/berths-4.png" alt="Selección de muelle">
+                <li><strong>Número: </strong>Se refiere a la posición numerada del muelle en la que se encuentra el
+                    atracadero. Por ejemplo: 1, 2, 3, etc.</li>
+                <img src="img/berths/berths-5.png" alt="Número del atracadero">
+                <li><strong>Largo: </strong>Distancia en metros que posee el atracadero respecto a la línea del muelle.
+                    <u>Siempre debe ser brindado lo máximo de metros que permite el atracadero.</u>
+                </li>
+                <img src="img/berths/berths-6.png" alt="Largo del atracadero">
+                <li><strong>Profundidad: </strong>Profundidad máximo marítima que posee el atracadero en relación a lo
+                    largo del puesto brindado en el muelle. <u>Se debe de brindar siempre la profundidad máxima
+                        existente.</u></li>
+                <img src="img/berths/berths-7.png" alt="Profundidad del atracadero">
+                <li><strong>Calado máximo permitido: </strong>Se refiere al calado máximo que permite el atracadero en
+                    relación a lo largo y profundo del puesto brindado en el muelle. <u>Se debe de brindar el calado
+                        máximo en metros.</u></li>
+                <img src="img/berths/berths-8.png" alt="Calado máximo del atracadero">
+                <li><strong>Secciones: </strong>Se refiere a la cantidad de secciones que posee el atracadero y su
+                    largo. Por ejemplo: A, B, C etc.</li>
+                <img src="img/berths/berths-9.png" alt="Secciones del atracadero">
+                <li><strong>Descripción: </strong>Descripción relevante de la instalación del atracadero.</li>
+                <img src="img/berths/berths-10.png" alt="Descripción del atracadero">
+                <li>Con todo lo anterior ya relleno y seguro de que son los datos correctos se puede dar clic en el
+                    <span class="boton" style="background-color: #1976d2;">Guardar</span> para finalizar el registro del
+                    atracadero.
+                </li>
+                <li>En caso contrario si la información no es segura o simplemente se desea cancelar la inserción de un
+                    nuevo atracadero se puede dar clic en el botón <span class="boton"
+                        style="background-color: white; -webkit-text-fill-color: #333;">Cancelar</span> para cancelar el
+                    registro.</li>
+            </ol>
+            <div class="advertencia">
+                <strong>Advertencia: </strong>A excepción de los campos <u>Secciones</u> y <u>Descripción</u> todos los
+                demás campos para el registro de un nuevo atracadero son de índole obligatoria.
+            </div>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">2</span>
+            <h3>Función búsqueda por filtro</h3>
+            <ol>
+                <p>Para realizar una búsqueda mediante filtro que sea satisfactoria debemos de hacer lo siguiente:</p>
+                <li>Nos posicionamos dentro del espacio en blanco de filtro</li>
+                <img src="img/berths/berths-11.png" alt="Espacio en blanco de filtro">
+                <li>Ingresamos un valor de filtro y la tabla mostrará automáticamente los resultados relacionados.</li>
+                <img src="img/berths/berths-12.png" alt="Resultados de filtro">
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">3</span>
+            <h3>Función refrescar información</h3>
+            <p>Para lograr refrescar la información a tiempo real con la más actualizada posible realizamos lo
+                siguiente:</p>
+            <ol>
+                <li>Ubicamos nuestro cursor sobre el botón de refrescar y presionamos sobre él.</li>
+                <img src="img/berths/berths-13.png" alt="Botón refrescar">
+                <li>Al momento de dar clic sobre el si existe información nueva se reflejara de manera directa en la
+                    tabla presente en la pantalla.</li>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">4</span>
+            <h3>Función ver información</h3>
+            <p>Para visualizar la información de un atracadero ya registrado debemos de seguir los siguientes pasos:</p>
+            <ol>
+                <li>Ubicamos el cursor sobre el botón de <u>Opciones</u> que se encuentra ubicado en la posición
+                    izquierda del todo de la tabla presente en pantalla.</li>
+                <img src="img/berths/berths-14.png" alt="Botón de opciones">
+                <li>Le damos clic al botón de opciones y se nos desplegara un menú con varias opciones, pero la que nos
+                    importa es la opción de <u>Ver información</u> que es la primera de este menú.</li>
+                <img src="img/berths/berths-15.png" alt="Opción Ver información">
+                <li>Con el menú anterior desplegado y ubicados sobre la opción <u>Ver información</u> se nos desplegará
+                    toda la información relacionada con el atracadero seleccionado.</li>
+                <img src="img/berths/berths-16.png" alt="Información del atracadero">
+                <li>Seguida a la opción <u>Ver información</u> se encuentra <u>Secciones</u>.</li>
+                <img src="img/berths/berths-17.png" alt="Opción Secciones">
+                <li>Dentro de esta opción podemos ver todas las secciones existentes en el atracadero seleccionado
+                    además de otros datos extra.</li>
+                <img src="img/berths/berths-18.png" alt="Pantalla secciones del atracadero">
+                <li>Los datos extra mencionados son los siguientes:</li>
+                <ol>
+                    <li><strong>Código: </strong>Código relacionado con el atracadero seleccionado.</li>
+                    <li><strong>Nombre: </strong>Nombre de la sección del atracadero. (<u>Si existe)</u></li>
+                    <li><strong>Largo (m): </strong>Distancia en metros que posee la sección con respecto al atracadero.
+                    </li>
+                    <img src="img/berths/berths-19.png" alt="Datos extra de secciones">
+                    <li>Además se puede agregar una nueva sección con el botón <u>Nuevo</u> y ahí mismo permite editar
+                        la información de esta nueva sección.</li>
+                    <img src="img/berths/berths-20.png" alt="Botón nueva sección">
+                    <li>Por último, brinda la funcionalidad de refrescar para actualizar la información en tiempo real.
+                    </li>
+                    <img src="img/berths/berths-21.png" alt="Botón refrescar secciones">
+                </ol>
+                <li>Como tercera opción del menú emergente de opciones podemos encontrar la chance de <u>Editar</u> la
+                    información del atracadero seleccionado.</li>
+                <img src="img/berths/berths-22.png" alt="Opción Editar">
+                <li>Como su nombre indica, una vez que le demos clic a la opción <u>Editar</u> se nos desplegara una
+                    pantalla de edición donde se podra modificar todos los datos del atracadero seleccionado.</li>
+                <img src="img/berths/berths-23.png" alt="Pantalla de edición">
+                <li>Por último, se encuentra la opción de <u>Eliminar</u> que nos permite eliminar el atracadero
+                    seleccionado.</li>
+                <img src="img/berths/berths-24.png" alt="Opción Eliminar">
+                <li>Al darle clic a está opción se desplegara una pantalla de confirmación donde se podra concretar la
+                    eliminación del atracadero seleccionado.</li>
+                <img src="img/berths/berths-25.png" alt="Pantalla de confirmación">
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">5</span>
+            <h3>Visualización de información en pantalla Atracaderos</h3>
+            <p>Para tener una visión general más clara de la información proyectada en la pantalla
+                <strong>Atracaderos</strong> se explicará de forma resumida los diversos atributos que se ubican en la
+                tabla presenta en pantalla. <u>(De izquierda a derecha).</u></p>
+            <li><strong>Nombre: </strong>Nombre del atracadero se conforma por el número de muelle (ubicación en puerto) y el número de sección.</li><strong>PREGUNTAR</strong>
+            <li><strong>Muelle: </strong>Nombre del muelle en el que se encuentra el atracadero.</li>
+            <li><strong>Largo (m): </strong>Largo total del atracadero en metros respecto a la línea del muelle.</li>
+            <li><strong>Profundidad (m): </strong>Profundidad máxima del atracadero con respecto al fondo marino medido en metros.</li>
+            <li><strong>Calado máximo (m): </strong>Calado máximo del atracadero con respecto al fondo marino medido en metros.</li>
+            <li><strong>Cantidad de secciones: </strong>Cantidad de secciones que posee el atracadero.</li>
+            <img src="img/berths/berths-26.png" alt="Tabla atracaderos">
+        </div>
+    </section>
+
+    <section id="seccion3">
+        <h2>3. Contacto y soporte</h2>
+        <p>Si necesitas ayuda adicional, contáctanos:</p>
+        <ul>
+            <li><strong>Correo electrónico:</strong> soporte@empresa.com</li>
+            <li><strong>Teléfono:</strong> +1 (123) 456-7890</li>
+            <li><strong>Horario de atención:</strong> Lunes a Viernes, 9 am - 5 pm</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 JAPDEVA. Todos los derechos reservados.</p>
+        <p>Versión de la guía: 1.0 | Última actualización: [Fecha]</p>
+    </footer>
+</body>
+
+</html>
