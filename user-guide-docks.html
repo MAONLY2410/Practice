@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Usuario - Muelle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            background-color: #f8f9fa;
+            padding: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .paso {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .numero-paso {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .consejo {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .advertencia {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+
+        .boton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Guía de Usuario - Muelle</h1>
+        <p>Bienvenido a la guía de usuario para la pantalla <strong>Muelle</strong> del sistema PLS. Esta guía está
+            diseñada para ayudarte a utilizar y comprender de forma sencilla y directa las funcionalidades que ofrece
+            esta pantalla.</p>
+    </header>
+
+    <nav>
+        <h2>Contenido</h2>
+        <ul>
+            <li><a href="#seccion1">1. Introducción</a></li>
+            <li><a href="#seccion2">2. Funciones principales</a></li>
+            <li><a href="#seccion3">3. Contacto y soporte</a></li>
+        </ul>
+    </nav>
+
+    <section id="seccion1">
+        <h2>1. Introducción</h2>
+        <p>La pantalla <strong>Muelle</strong> se encuentra ubicada dentro del submenú <strong>Almacenamiento de
+                Datos</strong> y ofrece una visualización general de los muelles existentes y registrados
+            en el sistema. Además de brindar un kit con diversas funciones de creación edición, eliminación y búsqueda.
+        </p>
+        <img src="img/docks/docks-0.png" alt="Pantalla Muelle">
+        <div class="consejo">
+            <strong>Consejo:</strong> Esta guía está diseñada para ser leída en orden, pero puedes saltar a las
+            secciones que necesites usando el menú de contenido.
+        </div>
+    </section>
+
+    <section id="seccion2">
+        <h2>2. Funciones principales</h2>
+        <div class="paso">
+            <span class="numero-paso">1</span>
+            <h3>Crear un nuevo muelle</h3>
+            <p>Para realizar una inserción de un nuevo muelle se debe de hacer lo siguiente:</p>
+            <ol>
+                <li>Dentro de la pantalla <strong>Muelle</strong> nos posicionamos sobre el botón <strong>Menú</strong>
+                    situado en la parte superior izquierda de la pantalla.</li>
+                <img src="img/docks/docks-1.png" alt="Botón Menú">
+                <li>Hacemos clic sobre el botón anteriormente mencionado y se nos mostrará la opción de <u>Registro
+                        nuevo</u>.</li>
+                <img src="img/docks/docks-2.png" alt="Registro nuevo">
+                <li>Al dar clic sobre el opción anterior se desplegará una vista para el <strong>Registro de
+                        Muelle</strong> donde se podrá realizar la inserción de los datos necesarios para la creación
+                    de un nuevo muelle.</li>
+                <img src="img/docks/docks-3.png" alt="Vista Registro Muelle">
+                <li>Con lo anterior ya visto comencemos con la inserción de los datos necesarios para la creación de un
+                    nuevo muelle.</li>
+                <h2>Creación de un nuevo muelle</h2>
+                <ol>
+                    <li>El primer campo dentro de esta vista es la selección de la <u>Instalación Portuaria</u> a la que
+                        pertenece el muelle a registrar.</li>
+                    <img src="img/docks/docks-4.png" alt="Selección de la instalación portuaria">
+                    <li>Una vez seleccionada la instalación portuaria el siguiente campo a rellenar es el <u>Nombre del
+                            muelle</u>.</li>
+                    <img src="img/docks/docks-5.png" alt="Nombre del muelle">
+                    <li>Por último se debe de rellenar el campo de <u>Identificador</u> del muelle.</li>
+                    <img src="img/docks/docks-6.png" alt="Identificador del muelle">
+                    <li>Una vez rellenados todos los campos se hace clic en el botón <span class="boton"
+                            style="background-color: #2196f3 ;">Guardar</span> para guardar los datos del nuevo muelle.
+                    </li>
+                    <li>En caso de que se desee cancelar el proceso se puede dar clic en el botón <span class="boton"
+                            style="background-color: white; -webkit-text-fill-color: #333;">Cancelar</span> para abortar
+                        la operación.</li>
+                </ol>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">2</span>
+            <h3>Función búsqueda por filtro</h3>
+            <p>Para realizar una búsqueda mediante filtro que sea satisfactoria se debe de hacer lo siguiente:</p>
+            <ol>
+                <li>Nos posicionamos dentro del espacio en blanco de filtro.</li>
+                <img src="img/docks/docks-7.png" alt="Espacio en blanco de filtro">
+                <li>Al estar dentro del espacio en blanco lo rellenamos con los datos deseados para realizar la búsqueda
+                    en la tabla proyectada en el sistema.</li>
+                <img src="img/docks/docks-8.png" alt="Resultados de filtro">
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">3</span>
+            <h3>Función refrescar información</h3>
+            <p>Para realizar de manera efectiva la actualización de la información en tiempo real se debe de hacer lo
+                siguiente:</p>
+            <ol>
+                <li>Ubicamos nuestro cursor sobre el botón de refrescar y presionamos sobre él.</li>
+                <img src="img/docks/docks-9.png" alt="Botón refrescar">
+                <li>Al momento de dar clic sobre el botón se realizará un refresco de información en pantalla por la más
+                    reciente ingresada en el sistema.</li>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">4</span>
+            <h3>Función editar muelle</h3>
+            <p>Para realizar la edición de un muelle ya registrado se debe de hacer lo siguiente:</p>
+            <ol>
+                <li>Ubicamos el cursor sobre el botón <u>Opciones</u> que se encuentra ubicado de lado izquierdo de la
+                    tabla proyectada en pantalla.</li>
+                <img src="img/docks/docks-10.png" alt="Botón opciones">
+                <li>Al estar sobre el botón <u>Opciones</u> se desplegará un menú con dos opciones:
+                    <strong>Editar</strong> y <strong>Eliminar</strong>.
+                </li>
+                <img src="img/docks/docks-11.png" alt="Opción editar">
+                <li>Al dar clic en la opción <strong>Editar</strong> se desplegará una ventana de edición para modificar
+                    los datos del muelle seleccionado.</li>
+                <img src="img/docks/docks-12.png" alt="Ventana de edición">
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">5</span>
+            <h3>Función eliminar muelle</h3>
+            <p>Para eliminar un muelle ya existente se debe de hacer lo siguiente:</p>
+            <ol>
+                <li>Ubicamos el cursor sobre la opción <u>Eliminar</u>.</li>
+                <img src="img/docks/docks-13.png" alt="Opción eliminar">
+                <li>Al dar clic en esta opción se desplegará una ventana de confirmación donde se podrá seleccionar si
+                    eliminar definitivamente el muelle seleccionado o cancelar la operación.</li>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">6</span>
+            <h3>Visualización de información en pantalla Muelle</h3>
+            <p>Para tener una visión general más clara de la información proyectada en la pantalla <u>Muelle</u> se
+                explicarán los datos en la tabla presente en la pantalla.</p>
+            <ol>
+                <li><strong>Nombre: </strong>El nombre general del muelle.</li>
+                <li><strong>Instalación: </strong>Instalación portuaria donde se encuentra localizado el muelle en
+                    cuestión.</li>
+                <li><strong>Identificador: </strong>Número de identificación del muelle.</li>
+                <img src="img/docks/docks-14.png" alt="Tabla muelles">
+            </ol>
+        </div>
+    </section>
+
+    <section id="seccion3">
+        <h2>3. Contacto y soporte</h2>
+        <p>Si necesitas ayuda adicional, contáctanos:</p>
+        <ul>
+            <li><strong>Correo electrónico:</strong> soporte@empresa.com</li>
+            <li><strong>Teléfono:</strong> +1 (123) 456-7890</li>
+            <li><strong>Horario de atención:</strong> Lunes a Viernes, 9 am - 5 pm</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 JAPDEVA. Todos los derechos reservados.</p>
+        <p>Versión de la guía: 1.0 | Última actualización: [Fecha]</p>
+    </footer>
+</body>
+
+</html>
