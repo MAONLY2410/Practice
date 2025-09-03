@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Usuario - Maestro de Naves</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            background-color: #f8f9fa;
+            padding: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .paso {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .numero-paso {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .consejo {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .advertencia {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+
+        .boton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Guía de Usuario - Maestro de Naves</h1>
+        <p>Bienvenido a la guía de usuario para la pantalla <strong>Maestro de Naves</strong> del sistema PLS. Esta guía
+            está diseñada para ayudarte a utilizar y comprender de forma sencilla y directa las funcionalidades que
+            ofrece esta pantalla.</p>
+    </header>
+
+    <nav>
+        <h2>Contenido</h2>
+        <ul>
+            <li><a href="#seccion1">1. Introducción</a></li>
+            <li><a href="#seccion2">2. Funciones principales</a></li>
+            <li><a href="#seccion3">3. Contacto y soporte</a></li>
+        </ul>
+    </nav>
+
+    <section id="seccion1">
+        <h2>1. Introducción</h2>
+        <p>La pantalla <strong>Maestro de Naves</strong> se localiza dentro del submenú <strong>Almaecenamiento de
+                Datos</strong> y ofrece una visualización de nformación generalizada de los barcos, además de brindar
+            opciones tanto búsqueda, edición y registro de nuevos barcos.</p>
+        <img src="img/ship-particulars/ship-0.png" alt="Pantalla Maestro de Naves">
+        <div class="consejo">
+            <strong>Consejo:</strong> Esta guía está diseñada para ser leída en orden, pero puedes saltar a las
+            secciones que necesites usando el menú de contenido.
+        </div>
+    </section>
+
+    <section id="seccion2">
+        <h2>2. Funciones principales</h2>
+        <!-- Ejemplo de paso -->
+        <div class="paso">
+            <span class="numero-paso">1</span>
+            <h3>Registrar nave</h3>
+            <p>Para lograr registrar de manera correcta una nueva nave se deben de seguir los siguientes pasos:</p>
+            <ol>
+                <li>Nos dirigimos a la parte superior izquierda sobre el botón de acciones y damos clic sobre el mismo.
+                </li>
+                <img src="img/ship-particulars/ship-1.png" alt="Botón acciones">
+                <li>Al darle clic sobre el botón se desplegara una ventana emergente con la opción <u>Registrar
+                        Nave</u>.</li>
+                <img src="img/ship-particulars/ship-2.png" alt="Ventana emergente">
+                <li>Al dar clic sobre la opción anterior se desplegará una ventana de edición donde se podrá realizar la
+                    inserción de los datgos necesarios para la creación de una nueva nave.</li>
+                <img src="img/ship-particulars/ship-3.png" alt="Ventana de inserción">
+                <li>Teniendo claro la clase de datos qe se requiere para la creación de una nueva nave
+                    comencemos con la
+                    guía de inserción.</li>
+                <h3>Creación de una nueva nave</h3>
+                <ol>
+                    <li><strong>Nombre: </strong>El primer campo que encontraremos en este apartado será la inserción
+                        del nombre de la nave. <u>(Registrado a nivel internacional).</u></li>
+                    <img src="img/ship-particulars/ship-4.png" alt="Nombre de la nave">
+                    <li><strong>Tipo de identificación: </strong>Seguidamente encontraremos la selección del tipo de
+                        identificación de la nave, donde se debe seleccionar uno de los diversos tipos existentes en el
+                        sistema.
+                    </li>
+                    <img src="img/ship-particulars/ship-5.png" alt="Tipo de identificación">
+                    <li><strong>Identificación: </strong>Inserción de la debida identificación de la nave, además de que
+                        debe de adaptarse a la tipología seleccionada en el punto anterior.</li>
+                    <img src="img/ship-particulars/ship-6.png" alt="Identificación">
+                    <li><strong>Tipo de buque: </strong>En este apartado es necesario seleccionar una de las diversas
+                        clases registradas en el sistema siempre y cuando la nave cumpla con esta clase.</li>
+                    <img src="img/ship-particulars/ship-7.png" alt="Tipo de buque">
+                    <li><strong>Bandera: </strong>/Se debe de seleccionar la bandera correspondiente al país de origen
+                        de la nave.</li>
+                    <img src="img/ship-particulars/ship-8.png" alt="Bandera">
+                    <li><strong>Calado máximo: </strong>El calado debe ser proyectado en metros y brindarse siempre lo
+                        máximo que ofrece el buque.</li>
+                    <img src="img/ship-particulars/ship-9.png" alt="Calado máximo">
+                    <li><strong>Eslora: </strong>La eslora debe ser proyectada en metros y brindarse siempre lo máximo
+                        que ofrece el buque.</li>
+                    <img src="img/ship-particulars/ship-10.png" alt="Eslora">
+                    <li><strong>TRB: </strong>El tonelaje registro bruto debe ser el máximo que posee el buque en kilos.
+                    </li>
+                    <img src="img/ship-particulars/ship-11.png" alt="TRB">
+                    <li><strong>TPN: </strong>El tonelaje peso neto deber ser el máximo que posee el buque en kilos.
+                    </li>
+                    <img src="img/ship-particulars/ship-12.png" alt="TPN">
+                    <li><strong>TPM: </strong>El tonelaje de peso muerto debe ser el más exacto posible.</li>
+                    <img src="img/ship-particulars/ship-12.png" alt="TPM">
+                    <li>Una vez completados todos los campos se puede dar clic en el botón <span class="boton"
+                            style="background-color: #2196f3;">Guardar</span></li>
+                    <li>En caso que se desee cancelar el proceso se puede dar clic en el botón <span class="boton"
+                            style="background-color:white; -webkit-text-fill-color: #333;">Cancelar</span></li>
+                </ol>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">2</span>
+            <h3>Función búsqueda por filtro</h3>
+            <p>Para realizar la función búsqueda mediante filtro realizamos lo siguiente:</p>
+            <ol>
+                <li>Nos posicionamos dentro del espacio en blanco de filtro.</li>
+                <img src="img/ship-particulars/ship-14.png" alt="Espacio en blanco de filtro">
+                <li>Al estar dentro del espacio en blanco lo rellenamos con los datos deseados para realizar la búsqueda
+                    en la tabla proyectada en el sistema.</li>
+                <img src="img/ship-particulars/ship-15.png" alt="Resultados de filtro">
+        </div>
+        <div class="paso">
+            <span class="numero-paso">3</span>
+            <h3>Función refrescar información</h3>
+            <p>Para lograr refrescar la información en tiempo real con la más reciente información registrada en la base
+                de datos realizamos lo siguiente:</p>
+            <ol>
+                <li>Ubicamos nuestro cursor sobre el botón de refrescar y presionamos sobre él.</li>
+                <img src="img/ship-particulars/" alt="Botón refrescar">
+                <li>Al momento de dar clic sobre el botón se realizará un refresco de información en pantalla por la más
+                    reciente ingresada en el sistema.</li>
+                <img src="img/ship-particulars/ship-16.png" alt="Refrescar información">
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">4</span>
+            <h3>Función visualizar información de buque ya registrado</h3>
+            <p>Para visualizar la información almacenada de un buque ya registrado se debe hacer lo siguiente:</p>
+            <ol>
+                <li>Ubicamos el cursor sobre el botón de <u>Opçiones</u> que está ubicado en la parte izquierda de la
+                    tabla proyectada en pantalla.</li>
+                <img src="img/ship-particulars/ship-17.png" alt="Botón de opciones">
+                <li>Al darle clic a este se mostrarán dos opciones <u>Información de buque</u> y <u>Editar</u>.</li>
+                <img src="img/ship-particulars/ship-18.png" alt="Opciones dentro de opciones">
+                <li>Al dar clic en información de buque se verá el <u>Ship Particular</u> que se encuentra registrado en
+                    el sistema en relación al buque seleccionado.</li>
+                <img src="img/ship-particulars/ship-19.png" alt="Opción información">
+                <img src="img/ship-particulars/ship-20.png" alt="Información del buque">
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">5</span>
+            <h3>Función editar buque ya registrado</h3>
+            <p>Para editar un buque ya registrado es necesario realizar lo siguiente:</p>
+            <ol>
+                <li>Al darle clic en la opción <u>Editar</u> se proyectará una ventana donde se podra editar todos los
+                    datos relacionados al buque seleccionado.</li>
+                <img src="img/ship-particulars/ship-21.png" alt="Opción editar">
+                <img src="img/ship-particulars/ship-22.png" alt="Ventana de edición">
+            </ol>
+        </div>
+
+        <div class="paso">
+            <span class="numero-paso">6</span>
+            <h3>Visualización de información en pantalla Maestro de Naves</h3>
+            <p>Para tener una vista más generalizada y comprensible de la información proyectada en la tabla presente en
+                la pantalla se explicarán de <u>izquierda a derecha</u> de los datos en cuestión.</p>
+            <ol>
+                <li><strong>System ID: </strong>Identificador único asignado por el sistema al momento de registrar el
+                    buque.</li>
+                <li><strong>Tipo de identificador: </strong>Clase de identificación que posee el buque, por ejemplo:
+                    IMO, MMSI entre otros.</li>
+                <li><strong>Identificador: </strong>Número de identificación que posee el buque en relación al punto
+                    anterior.</li>
+                <li><strong>Nombre: </strong>Nombre con el cual la embarcación fue bautizada.</li>
+                <li><strong>Tipo: </strong>Tipo de buque que es el navio registrado en el sistema, por ejemplo: Crucero,
+                    Buque de carga entre otros.</li>
+                <li><strong>Categoría COCATRAM: </strong>Categoría de la embarcación en relación a las diversas clases
+                    de embarcaciones que posee COCATRAM.</li>
+                <li><strong>Bandera: </strong>Bandera reflejada en siglas del país de origen de la embarcación, por
+                    ejemplo PA o CR.</li>
+                <li><strong>Eslora: </strong>Extensión de la embarcación en metros.</li>
+                <li><strong>Calado máximo: </strong>Calado máximo de la embarcación en metros.</li>
+                <li><strong>TRB: </strong>Tonelaje registro bruto de la embarcación en kilos.</li>
+                <li><strong>TRN: </strong>Tonelaje peso neto de la embarcación en kilos.</li><strong>PREGUNTAR</strong>
+                <li><strong>TPM: </strong>Tonelaje de peso muerto de la embarcación en kilos.</li>
+            </ol>
+        </div>
+    </section>
+    <section id="seccion3">
+        <h2>3. Contacto y soporte</h2>
+        <p>Si necesitas ayuda adicional, contáctanos:</p>
+        <ul>
+            <li><strong>Correo electrónico:</strong> soporte@empresa.com</li>
+            <li><strong>Teléfono:</strong> +1 (123) 456-7890</li>
+            <li><strong>Horario de atención:</strong> Lunes a Viernes, 9 am - 5 pm</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 JAPDEVA. Todos los derechos reservados.</p>
+        <p>Versión de la guía: 1.0 | Última actualización: [Fecha]</p>
+    </footer>
+</body>
+
+</html>
