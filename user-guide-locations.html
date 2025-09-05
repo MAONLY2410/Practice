@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Usuario - Ubicaciones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            background-color: #f8f9fa;
+            padding: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .paso {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .numero-paso {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .consejo {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .advertencia {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+
+        .boton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Guía de Usuario - Ubicaciones</h1>
+        <p>Bienvenido a la guía de usuario para la pantalla <strong>Ubicaciones</strong> del sistema PLS. Esta guía está
+            diseñada para ayudarte a utilizar y comprender de forma sencilla y directa las funcionalidades que ofrece
+            esta pantalla.</p>
+    </header>
+
+    <nav>
+        <h2>Contenido</h2>
+        <ul>
+            <li><a href="#seccion1">1. Introducción</a></li>
+            <li><a href="#seccion2">2. Funciones principales</a></li>
+            <li><a href="#seccion3">3. Contacto y soporte</a></li>
+        </ul>
+    </nav>
+
+    <section id="seccion1">
+        <h2>1. Introducción</h2>
+        <p>Localizada dentro del submenú de <strong>Administración de Datos</strong> permite realizar acciones tales
+            como: Agregar ubicaciones, filtrar, visualizar y refrescar la información en pantalla.</p>
+        <img src="img/locations/loc-0.png" alt="Pantalla Ubicaciones">
+        <div class="consejo">
+            <strong>Consejo:</strong> Esta guía está diseñada para ser leída en orden, pero puedes saltar a las
+            secciones que necesites usando el menú de contenido.
+        </div>
+    </section>
+
+    <section id="seccion2">
+        <h2>2. Funciones principales</h2>
+        <div class="paso">
+            <span class="numero-paso">1</span>
+            <h3>Cargar ubicaciones</h3>
+            <p>Para realizar la carga de ubicaciones se debe de hacer lo siguiente:</p>
+            <ol>
+                <li>Nos posicionaremos sobre el botón <span class="boton" style="background-color: #1976d2;">Cargar
+                        Ubicaciones</span></li>
+                <img src="img/locations/loc-1.png" alt="Botón cargar ubicaciones">
+                <li>Damos clic sobre el y se desplegará una ventana en la cual se puede seleccionar un archivo con la
+                    información de las ubicaciones que se desean cargar.</li>
+                <img src="img/locations/loc-2.png" alt="Ventana de carga de ubicaciones">
+                <li>Una vez dentro de esta ventana se debe de dar clic sobre el botón <span class="boton"
+                        style="background-color: lightgrey; border-color: black; -webkit-text-fill-color: #333;">Elegir
+                        archivo</span></li>
+                <img src="img/locations/loc-3.png" alt="Botón elegir archivo">
+                <li>Una vez dado el clic sobre el botón se desplegará la pantalla de archivos locales del computador,
+                    donde se puede seleccionar el archivo que se desea cargar.</li>
+                <li>Con la selección del archivo deseado realizada lo que sigue es dar clic sobre el botón <span
+                        class="boton" style="background-color: #1976d2 ;">Subir archivo</span></li>
+                <li>En caso contrario que se desee abortar la ejecución de la carga se puede realizar simplemente dando
+                    clic sobre el botón <span class="boton"
+                        style="background-color:white; -webkit-text-fill-color: #333;">Cancelar</span></li>
+                <div class="advertencia">
+                    <strong>Advertencia: </strong> Solo se permiten archivos con extensión <strong><u>.csv</u></strong>
+                    además debe de cumplir con lo estipulado por el
+                    <a href="https://unece.org/trade/cefact/UNLOCODE-Download"
+                        target="_blank"><strong>UN/LOCODE</strong></a>.
+                </div>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">2</span>
+            <h3>Realizar búsqueda mediante filtro</h3>
+            <p>Para realizar la búsqueda mediante filtro se debe hacer lo siguiente:</p>
+            <ol>
+                <li>Posicionar el cursor sobre el espacio en blanco de la pantalla ubicado en la parte superior
+                    izquierda de la tabla donde se esta por defecto la leyenda <u>Filtro</u>.</li>
+                <li>Damos clic sobre este espacio en blanco.</li>
+                <img src="img/locations/loc-4.png" alt="Espacio filtro">
+                <li>Ingresamos los criterios de búsqueda que se deseen realizar.</li>
+                <img src="img/locations/loc-5.png" alt="Criterios de filtro">
+                <li>Si existe <strong>relación</strong> entre los criterios de búsqueda y la tabla se reflejará de
+                    manera automática en
+                    la tabla el resultado. Como se ve en la imagen anterior.</li>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">3</span>
+            <h3>Función refrescar información</h3>
+            <p>Para lograr la función de refresco de manera exitosa se debe de hacer lo siguiente:</p>
+            <ol>
+                <li>Ubicamos nuestro cursor sobre el botón de refresco que se encuentra en la parte superior izquierda
+                    de la tabla en pantalla.</li>
+                <img src="img/locations/loc-6.png" alt="Botón refresco">
+                <li>Al darle clic se reflejará de manera automática la información más reciente en la tabla presente en
+                    pantalla.</li>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">4</span>
+            <h3>Visualización de información en pantalla Ubicaciones</h3>
+            <p>Para brindar una visión más clara y entendible de los diversos campops que componen la tabla reflejada en
+                pantalla se explicarán a continuación de forma resumida cada uno de estos.</p>
+            <ol>
+                <li><strong>UN/LOCODE: </strong>Código de la ONU que identifica ubicaciones clave en comercio y
+                    transporte, como puertos y aeropuertos. Lo gestiona la <u>UNECE</u>.</li>
+                <li><strong>Código aduana: </strong>Código respectivo de la aduana según el código UN/LOCODE
+                    relacionado.</li>
+                <li><strong>Nombre: </strong>Nombre de la ubicación.</li>
+                <li><strong>Código de país: </strong>Código en letras de dos caracteres correspondiente al país de la
+                    ubicación.</li>
+                <li><strong>País: </strong>Nombre del país de la ubicación.</li>
+                <li><strong>Función: </strong></li> <strong>PREGUNTAR</strong>
+                <li><strong>Funciones: </strong></li> <strong>PREGUNTAR</strong>
+                <li><strong>Estado: </strong>Estado en el que se encuentra ante los ojos internacionales. Algo así como
+                    permisos y restricciones.</li> <strong>PREGUNTAR</strong>
+                <img src="img/locations/loc-7.png" alt="Tabla ubicaciones">
+            </ol>
+        </div>
+    </section>
+    <section id="seccion3">
+        <h2>3. Contacto y soporte</h2>
+        <p>Si necesitas ayuda adicional, contáctanos:</p>
+        <ul>
+            <li><strong>Correo electrónico:</strong> soporte@empresa.com</li>
+            <li><strong>Teléfono:</strong> +1 (123) 456-7890</li>
+            <li><strong>Horario de atención:</strong> Lunes a Viernes, 9 am - 5 pm</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 JAPDEVA. Todos los derechos reservados.</p>
+        <p>Versión de la guía: 1.0 | Última actualización: [Fecha]</p>
+    </footer>
+</body>
+
+</html>
