@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Usuario - Viajes TICA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            background-color: #f8f9fa;
+            padding: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .paso {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .numero-paso {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .consejo {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .advertencia {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+
+        .boton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Guía de Usuario - Viajes TICA</h1>
+        <p>Bienvenido a la guía de usuario para la pantalla <strong>Viajes TICA</strong> del sistema PLS. Esta guía está
+            diseñada para ayudarte a utilizar y comprender de forma sencilla y directa las funcionalidades que ofrece
+            esta pantalla.</p>
+    </header>
+
+    <nav>
+        <h2>Contenido</h2>
+        <ul>
+            <li><a href="#seccion1">1. Introducción</a></li>
+            <li><a href="#seccion2">2. Funciones principales</a></li>
+            <li><a href="#seccion3">3. Contacto y soporte</a></li>
+        </ul>
+    </nav>
+
+    <section id="seccion1">
+        <h2>1. Introducción</h2>
+        <p>Esta pantalla, ubicada en el submenú <u>TICA Portones</u>, permite filtrar y buscar información sobre los
+            viajes registrados en el
+            sistema. También ofrece detalles ampliados y la opción de actualizar los datos mostrados.</p>
+        <img src="img/authorizations/auth-0.png" alt="Ubicación pantalla viajes TICA">
+        <div class="consejo">
+            <strong>Consejo:</strong> Esta guía está diseñada para ser leída en orden, pero puedes saltar a las
+            secciones que necesites usando el menú de contenido.
+        </div>
+    </section>
+
+    <section id="seccion2">
+        <h2>2. Funciones principales</h2>
+        <div class="paso">
+            <span class="numero-paso">1</span>
+            <h3>Filtración de viajes</h3>
+            <p>Para realizar esta función se debe hacer lo siguiente:</p>
+            <ol>
+                <li>Para esta función es necesario que el usuario maneje 2 campos en pantalla para mostrar la
+                    información deseada en pantalla siendo estos: <strong>Tipo de Viaje</strong> y <strong>Tipo
+                        Operación</strong>.</li>
+                <img src="img/authorizations/auth-1.png" alt="Campos de filtrado">
+                <li>Dependiendo de la opción seleccionada en el <strong>primer campo</strong> aparecerán diversos campos
+                    extra para
+                    realizar una búsqueda más específica.</li>
+                <div class="paso">
+                    <span class="numero-paso">1.1</span>
+                    <h4>Filtración de viaje (Tipo de Viaje <u>Contenedor</u>)</h4>
+                    <p>Para realizar esta función se debe de hacer lo siguiente:</p>
+                    <ol>
+                        <li>Se debe posicionar el cursor sobre la opción <u>Tipo de Viaje</u> y damos clic.</li>
+                        <li>Al momento de hacer clic se desplegarán diversas opciones para realizar la búsqueda.</li>
+                        <img src="img/authorizations/auth-2.png" alt="Opciones de filtrado">
+                        <li>Una vez visualizando las opciones seleccionamos la opción <u>Contenedor</u>.</li>
+                        <img src="img/authorizations/auth-3.png" alt="Opción contenedor">
+                        <li>Al momento de seleccionar está opción se agregará al lado del campo <u>Tipo Operación</u>
+                            el espacio para ingresar el número de <u>contenedor</u>.</li>
+                        <img src="img/authorizations/auth-4.png" alt="Campo extra contenedor">
+                        <li>Previo a esto se debe seleccionar el tipo de operación <u>Exportación</u> o
+                            <u>Importación</u>.
+                        </li>
+                        <img src="img/authorizations/auth-5.png" alt="Opción operación">
+                        <li>Por último, se debe agregar el número de contenedor deseado.</li>
+                        <img src="img/authorizations/auth-6.png" alt="Campo contenedor">
+                        <li>Al dar clic en el botón <u>Buscar</u> se reflejará la información relacionada a la
+                            información seleccionada en los campos previos.</li>
+                        <div class="advertencia">
+                            <strong>Advertencia: </strong>El campo <strong>Contenedor</strong> es de carácter
+                            obligatoria.
+                        </div>
+                    </ol>
+                </div>
+                <div class="paso">
+                    <span class="numero-paso">1.2</span>
+                    <h4>Filtración de viaje (Tipo de Viaje <u>Carga Suelta</u>)</h4>
+                    <p>Para realizar esta función se debe de hacer lo siguiente:</p>
+                    <ol>
+                        <li>Se debe posicionar el cursor sobre la opción <u>Tipo de Viaje</u> y damos clic.</li>
+                        <li>Al momento de hacer clic se desplegarán diversas opciones para realizar la búsqueda de forma
+                            más acertada.</li>
+                        <img src="img/authorizations/auth-2.png" alt="Opciones de filtrado">
+                        <li>Una vez visualizando las opciones seleccionamos la opción <u>Carga Suelta</u>.</li>
+                        <img src="img/authorizations/auth-7.png" alt="Opción carga suelta">
+                        <li>Al momento de seleccionar está opción se agregarán diversos campos extra para realizar una
+                            búsqueda más específica.</li>
+                        <img src="img/authorizations/auth-8.png" alt="Campos extra carga suelta">
+                        <li>Antes de realizar la búsqueda se debe seleccionar el <u>Tipo Operación</u>.</li>
+                        <img src="img/authorizations/auth-9.png" alt="Opción operación">
+                        <li>Continuando con los campos se debe de agregar el <u>Número de viaje</u> y el <u>Número de
+                                arribo</u>.</li>
+                        <img src="img/authorizations/auth-10.png" alt="Campos extra carga suelta">
+                        <li>
+                        <li>Por último, se puede indicar que en el viaje hubo movimientos relacionados con autos dando
+                            clic en el checkbox <u>Vehículo Rodado</u>.</li>.</li>
+                        <img src="img/authorizations/auth-11.png" alt="Checkbox rodado">
+                        <li>Una vez con toda la información seleccionada y agregada se puede dar clic en el botón
+                            <u>Buscar</u> para visualizar la información correspondiente.
+                        </li>
+                        <div class="advertencia">
+                            <strong>Advertencia: </strong> Los campos <strong>Número de viaje</strong> y <strong>Número
+                                de Arribo</strong> son de carácter obligatorias.
+                        </div>
+                    </ol>
+                    <div class="paso">
+                        <span class="numero-paso">1.3</span>
+                        <h4>Filtración de viaje (Tipo de Viaje <u>DUA</u>)</h4>
+                        <p>Para reralizar esta función se debe de hacer lo siguiente:</p>
+                        <ol>
+                            <li>Se debe posicionar el cursor sobre la opción <u>Tipo de Viaje</u> y damos clic.</li>
+                            <li>Al momento de dar clic sobre la opción anterior se desplegarán diversas para realizar la
+                                búsqueda de forma más acertada.</li>
+                            <img src="img/authorizations/auth-2.png" alt="Opciones de filtrado">
+                            <li>Una vez visualizando las opciones seleccionamos la opción <u>DUA</u>.</li>
+                            <img src="img/authorizations/auth-12.png" alt="Opción DUA">
+                            <li>Al momento de seleccionar está opción se agregarán diversos campos extra para realizar
+                                una búsqueda más específica.</li>
+                            <img src="img/authorizations/auth-13.png" alt="Campos extra DUA">
+                            <li>Antes de realizar la búsqueda se debe seleccionar el <u>Tipo Operación</u>.</li>
+                            <img src="img/authorizations/auth-13.png" alt="Opción operación">
+                            <li>Continuando con los campos extra se deben de agregar información oficial en estos para
+                                realizar la búsqueda.</li>
+                            <img src="img/authorizations/auth-15.png" alt="Campos extra DUA">
+                            <li>Por último, ya con toda la información seleccionada y agregada se puede dar clic en el
+                                botón <u>Buscar</u> para visualizar la información correspondiente.</li>
+                            <div class="advertencia">
+                                <strong>Advertencia: </strong> Los campos <strong>Número de Arribo, Código Aduana, Año y
+                                    Número Correlativo</strong> son de carácter obligatoria.
+                            </div>
+                        </ol>
+                    </div>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">2</span>
+            <h3>Filtro mediante fechas</h3>
+            <p>Para realizar esta función de manera satisfactoria se debe de realizar lo siguiente:</p>
+            <ol>
+                <li>Posicionamos el cursor sobre el campo <strong>Rango de fechas</strong>.</li>
+                <img src="img/authorizations/auth-16.png" alt="Rango de fechas">
+                <li>Como se puede denotar en la imagen anterior el campo de fechas funciona con el orden
+                    <strong>Día/Mes/Año</strong> y es de carácter obligatoria para realizar cualquier búsqueda.
+                </li>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">3</span>
+            <h3>Búsqueda mediante filtro</h3>
+            <p>Para realizar esta función se debe hacer lo siguiente:</p>
+            <ol>
+                <li>Colocar el cursor sobre el campo que muestra la leyenda <u>Filtro</u>.</li>
+                <img src="img/authorizations/auth-17.png" alt="Espacio filtro">
+                <li>Una vez en este espacio se debe escribir el criterio de búsqueda deseado los datos se filtrarán con
+                    los resultados que coincidan con el criterio ingresado.</li>
+                <img src="img/authorizations/auth-18.png" alt="Resultado búsqueda">
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">4</span>
+            <h3>Función refrescar la información</h3>
+            <p>Para lograr la función de refresco se debe hacer lo siguiente:</p>
+            <ol>
+                <li>Ubicar el cursor sobre el botón de refrescar y presionar sobre él.</li>
+                <img src="img/authorizations/auth-19.png" alt="Botón refrescar">
+                <li>Al momento de dar clic se reflejará la información más reciente en el sistema que no haya sido
+                    proyectada en la tabla presente.</li>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">5</span>
+            <h3>Información detallada de UT</h3>
+            <p>Para lograr visualizar esta información detallada se debe de hacer lo siguiente:</p>
+            <ol>
+                <li>Ubicar el cursor sobre cualquiera de los íconos de <u>Información</u> que se encuentran en cada una
+                    de las filas de la tabla reflejada en pantalla.</li>
+                <img src="img/authorizations/auth-20.png" alt="Información extra">
+                <li>Al dar clic en esta opción se desplegará una ventana emergente con el siguiente aspecto.</li>
+                <img src="img/authorizations/auth-21.png" alt="Información detallada">
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">6</span>
+            <h3>Visualización de información pantalla Viajes TICA</h3>
+            <p>Para brindar una experiencia más confortable a continuación se explicarán cada uno de los diversos campos
+                que posee la tabla presente en pantalla.</p>
+            <ol>
+                <li><strong>Número de contenedor: </strong>Identificador único del contenedor ante sistema y entes
+                    nacionales e internacionales.</li>
+                <li><strong>Unidad de transporte: </strong>Placa del vehículo que transporta la carga.</li>
+                <li><strong>Viaje: </strong>PREGUNTAR</li>
+                <li><strong>DUA: </strong>Documento único aduanero al cual se encuentra relacionado el viaje.</li>
+                <li><strong>Peso: </strong>Peso del contenedor en kilos totales.</li>
+                <li><strong>Tipo de carga: </strong>Tipo de carga que maneja el contenedor. Ejemplo: General, reefers,
+                    granel, etc.</li>
+                <li><strong>Autorizado por: </strong>Persona que autoriza el viaje.</li>
+                <li><strong>Fecha de autorización: </strong>Fecha y hora exacta en que se autorizó el viaje.</li>
+                <img src="img/authorizations/auth-22.png" alt="Información detallada">
+            </ol>
+        </div>
+    </section>
+
+    <section id="seccion3">
+        <h2>3. Contacto y soporte</h2>
+        <p>Si necesitas ayuda adicional, contáctanos:</p>
+        <ul>
+            <li><strong>Correo electrónico:</strong> soporte@empresa.com</li>
+            <li><strong>Teléfono:</strong> +1 (123) 456-7890</li>
+            <li><strong>Horario de atención:</strong> Lunes a Viernes, 9 am - 5 pm</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 JAPDEVA. Todos los derechos reservados.</p>
+        <p>Versión de la guía: 1.0 | Última actualización: [Fecha]</p>
+    </footer>
+</body>
+
+</html>
