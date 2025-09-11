@@ -14,24 +14,31 @@
             margin: 0 auto;
             padding: 20px;
         }
-        h1, h2, h3 {
+
+        h1,
+        h2,
+        h3 {
             color: #2c3e50;
         }
+
         h1 {
             border-bottom: 2px solid #3498db;
             padding-bottom: 10px;
         }
+
         h2 {
             background-color: #f8f9fa;
             padding: 8px;
             border-left: 4px solid #3498db;
         }
+
         .paso {
             background-color: #f8f9fa;
             border-radius: 5px;
             padding: 15px;
             margin-bottom: 15px;
         }
+
         .numero-paso {
             display: inline-block;
             background-color: #3498db;
@@ -43,24 +50,28 @@
             border-radius: 50%;
             margin-right: 10px;
         }
+
         .consejo {
             background-color: #e3f2fd;
             border-left: 4px solid #2196f3;
             padding: 10px;
             margin: 10px 0;
         }
+
         .advertencia {
             background-color: #ffebee;
             border-left: 4px solid #f44336;
             padding: 10px;
             margin: 10px 0;
         }
+
         img {
             max-width: 100%;
             height: auto;
             border: 1px solid #ddd;
             margin: 10px 0;
         }
+
         .boton {
             background-color: #4CAF50;
             color: white;
@@ -77,7 +88,9 @@
 <body>
     <header>
         <h1>Guía de Usuario - Administrador de Procesos</h1>
-        <p>Bienvenido a la guía de usuario para la pantalla <strong>Administrador de Procesos</strong> del sistema PLS. Esta guía está diseñada para ayudarte a utilizar y comprender de forma sencilla y directa las funcionalidades que ofrece esta pantalla.</p>
+        <p>Bienvenido a la guía de usuario para la pantalla <strong>Administrador de Procesos</strong> del sistema PLS.
+            Esta guía está diseñada para ayudarte a utilizar y comprender de forma sencilla y directa las
+            funcionalidades que ofrece esta pantalla.</p>
     </header>
 
     <nav>
@@ -85,53 +98,133 @@
         <ul>
             <li><a href="#seccion1">1. Introducción</a></li>
             <li><a href="#seccion2">2. Funciones principales</a></li>
-            <li><a href="#seccion3">3. Solución de problemas</a></li>
-            <li><a href="#seccion4">4. Contacto y soporte</a></li>
+            <li><a href="#seccion3">3. Contacto y soporte</a></li>
         </ul>
     </nav>
 
     <section id="seccion1">
         <h2>1. Introducción</h2>
-        <p>[Descripción general de la pantalla y su propósito]</p>
-        <!-- <img src="[ruta/imagen.png]" alt="[Descripción de la imagen]"> -->
+        <p>Ubicada dentro del submenú <u>Procesos</u>, esta pantalla ofrece como función principal el visualizar todos los
+            procesos realizados
+            por los usuarios en el sistema. Además de brindar funciones de búsqueda, refresco y opciones extra
+            relacionadas a cada uno de los procesos.</p>
+        <img src="img/process-admin/admin-0.png" alt="Pantalla administrador procesos">
         <div class="consejo">
-            <strong>Consejo:</strong> Esta guía está diseñada para ser leída en orden, pero puedes saltar a las secciones que necesites usando el menú de contenido.
+            <strong>Consejo:</strong> Esta guía está diseñada para ser leída en orden, pero puedes saltar a las
+            secciones que necesites usando el menú de contenido.
         </div>
     </section>
 
     <section id="seccion2">
         <h2>2. Funciones principales</h2>
-        <!-- Ejemplo de paso -->
         <div class="paso">
             <span class="numero-paso">1</span>
-            <h3>[Nombre de la función]</h3>
-            <p>[Descripción de cómo realizar la función]</p>
-            <!-- <img src="[ruta/imagen.png]" alt="[Descripción de la imagen]"> -->
+            <h3>Búsqueda mediante filtro</h3>
+            <p>Para realizar está función de manera correcta es necesario hacer los siguientes pasos:</p>
+            <ol>
+                <li>Posicionar el cursor sobre el espacio en blanco ubicado en la parte superior izquierda de la
+                    pantalla.</li>
+                <img src="img/process-admin/admin-1.png" alt="Espacio filro">
+                <li>Se deben de ingresar los criterios de búsqueda deseados, donde si existen datos que coincidan con
+                    estos se
+                    mostrarán automáticamente en pantalla.</li>
+                <img src="img/process-admin/admin-2.png" alt="Resultados de la búsqueda">
+            </ol>
         </div>
-        <!-- Agrega más pasos según sea necesario -->
+        <div class="paso">
+            <span class="numero-paso">2</span>
+            <h3>Función refresco de información</h3>
+            <p>Para realizar de manera correcta esta función se deben seguir estos pasos:</p>
+            <ol>
+                <li>Posicionar el cursor sobre el botón de refresco de información y dar clic sobre él.</li>
+                <img src="img/process-admin/admin-3.png" alt="Botón refresco">
+                <li>Sí existen <strong>datos nuevos</strong> se reflejarán de manera automática en la tabla presente en
+                    pantalla al moento de dar clic en el botón.</li>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">3</span>
+            <h3>Función información detallada</h3>
+            <p>Para visualizar esta información detallada de un proceso se debe seguir estos pasos:</p>
+            <ol>
+                <li>Posicionar el cursor sobre el botón de <u>Opciones</u> que se encuentra al lado izquierdo de cada
+                    una de
+                    las filas existentes en la tabla.</li>
+                <img src="img/process-admin/admin-4.png" alt="Botón opciones">
+                <li>Al momento de dar clic se desplegará una pequeña ventana con dos opciones: <u>Información</u> e
+                    <u>Historial</u>.
+                </li>
+                <img src="img/process-admin/admin-5.png" alt="Ventana opciones">
+                <li>La opción que nos interesa es la de <u>Información</u> por ende daremos clic en ella.</li>
+                <img src="img/process-admin/admin-6.png" alt="Opción información">
+                <li>Como se observa en la siguiente imagen la opción de <u>Información</u> brinda una vista más
+                    detallada
+                    sobre el proceso adjuntando datos generales y archivos adjuntos del mismo.</li>
+                <img src="img/process-admin/admin-7png" alt="Ventana información">
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">4</span>
+            <h3>Función historial</h3>
+            <ol>
+                <li>Aparte de la opción de <u>Información</u> la ventana de opciones también brinda la oportunidad de
+                    visualizar el <u>Historial</u> de un proceso seleccionado.</li>
+                <img src="img/process-admin/admin-8.png" alt="Opción historial">
+                <li>Al momento de dar clic en la opción se desplegará una ventana que contiene tanto información
+                    relacionada al proceso seleccionado como acciones que se pueden realizar sobre la información
+                    misma.</li>
+                <img src="img/process-admin/admin-9.png" alt="Ventana historial">
+                <li>Como se puede observar en la imagen anterior está ventana posee funcionalidades internas tales como:
+                    Búsqueda mediante filtro y actualización de información. Donde su funcionamiento es igual a lo
+                    explicado en esta guía.</li>
+                <img src="img/process-admin/admin-10.png" alt="Acciones extras">
+                <li>Por último, dentro de está pantalla se pueden observar campos relacionados al proceso los cuales
+                    serán explicados a continuación.</li>
+                <ol>
+                    <li><strong>Fecha evento: </strong>La fecha y hora exacta en la que se realizó la acción en el
+                        sistema.</li>
+                    <li><strong>Tipo: </strong>Tipo de evento relacionado con el proceso.</li>
+                    <li><strong>Usuario: </strong>Usuario que realizó la acción.</li>
+                    <li><strong>Estado: </strong>Estado del proceso en el momento de realizar la acción.</li>
+                    <li><strong>Usuario Destino: </strong>A quién va dirigido el proceso.</li>
+                    <li><strong>Estado destino: </strong>Estado del proceso al momento de recibirlo el destinatario.
+                    </li>
+                    <li><strong>Observaciones: </strong>Observaciones adicionales sobre el proceso.</li>
+                    <img src="img/process-admin/admin-11.png" alt="Campos relacionados al proceso (historial)">
+                </ol>
+            </ol>
+        </div class="paso">
+        <div>
+            <span class="numero-paso">5</span>
+            <h3>Visualización de información en pantalla Administrador de Procesos</h3>
+            <p>Para brindar una visión general sobre los campos que componen la tabla presente en pantalla se procederá
+                a explicar de manera detallada cada uno de los mismos a continuación.</p>
+            <ol>
+                <li><strong>Código: </strong>Identificador único del proceso en el sistema.</li>
+                <li><strong>Tipo: </strong>Tipo de proceso realizado por los usuarios en el sitema. Ejemplo: Solicitud
+                    de ingreso o anuncio de arribo.</li>
+                <li><strong>Descripción: </strong>Descripción del proceso, generalmente usada para indicar el número de
+                    arribo o información relacionada a la nave que está solicitando las acciones del proceso.</li>
+                <li><strong>Fecha de registro: </strong>Fecha en que se registró el proceso en el sistema.</li>
+                <li><strong>Estado: </strong>Estado en el que se encuentra el proceso.</li>
+                <img src="img/process-admin/admin-12.png" alt="Pantalla administrador de procesos">
+            </ol>
+        </div>
     </section>
 
     <section id="seccion3">
-        <h2>3. Solución de problemas</h2>
-        <h3>[Problema común]</h3>
-        <p><strong>Síntoma:</strong> [Descripción del síntoma]</p>
-        <p><strong>Solución:</strong> [Descripción de la solución]</p>
-        <!-- Agrega más problemas según sea necesario -->
-    </section>
-
-    <section id="seccion4">
-        <h2>4. Contacto y soporte</h2>
+        <h2>3. Contacto y soporte</h2>
         <p>Si necesitas ayuda adicional, contáctanos:</p>
         <ul>
             <li><strong>Correo electrónico:</strong> soporte@empresa.com</li>
             <li><strong>Teléfono:</strong> +1 (123) 456-7890</li>
-            <li><strong>Horario de atención:</strong> Lunes a Viernes, 9 am - 5 pm</li>
+            <li><strong>Horario de atención:</strong> Lunes a Viernes, 8 am - 5 pm</li>
         </ul>
     </section>
 
     <footer>
         <p>© 2025 JAPDEVA. Todos los derechos reservados.</p>
-        <p>Versión de la guía: 1.0 | Última actualización: [Fecha]</p>
+        <p>Versión de la guía: 1.0 | Última actualización: [11/09/2025]</p>
     </footer>
 </body>
 
