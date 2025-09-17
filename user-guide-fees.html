@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Usuario - Tarifas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            background-color: #f8f9fa;
+            padding: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .paso {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .numero-paso {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .consejo {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .advertencia {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+
+        .boton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Guía de Usuario - Tarifas</h1>
+        <p>Bienvenido a la guía de usuario para la pantalla <strong>Tarifas</strong> del sistema PLS. Esta guía está
+            diseñada para ayudarte a utilizar y comprender de forma sencilla y directa las funcionalidades que ofrece
+            esta pantalla.</p>
+    </header>
+
+    <nav>
+        <h2>Contenido</h2>
+        <ul>
+            <li><a href="#seccion1">1. Introducción</a></li>
+            <li><a href="#seccion2">2. Funciones principales</a></li>
+            <li><a href="#seccion3">3. Contacto y soporte</a></li>
+        </ul>
+    </nav>
+
+    <section id="seccion1">
+        <h2>1. Introducción</h2>
+        <p>Ubicada en el submenú <u>Facturación de Servicios</u>, permite gestionar de forma integral los
+            registros de tarifas. Ofrece funciones para crear, buscar, editar, actualizar, versionar, activar o
+            desactivar, descargar y visualizar información relacionada.
+        </p>
+        <img src="img/fees/fees-0.png" alt="Ubicación de la pantalla">
+        <div class="consejo">
+            <strong>Consejo:</strong> Esta guía está diseñada para ser leída en orden, pero puedes saltar a las
+            secciones que necesites usando el menú de contenido.
+        </div>
+    </section>
+
+    <section id="seccion2">
+        <h2>2. Funciones principales</h2>
+        <div class="paso">
+            <span class="numero-paso">1</span>
+            <h3>Crear nueva tarifa</h3>
+            <p>Para realizar una inserción de una nueva tarifa se debe hacer lo siguiente:</p>
+            <ol>
+                <li>Ubicar el cursor sobre el botón de <u>Crear Tarifa</u> el cual se encuentra en la parte superior
+                    izquierda de la pantalla.</li>
+                <img src="img/fees/fees-1.png" alt="Botón crear tarifa">
+                <li>Al posicionar el cursor sobre el botón y hacer clic, se desplegará una ventana emergente con todos
+                    los campos necesarios para registrar una nueva tarifa.</li>
+                <img src="img/fees/fees-2.png" alt="Ventana crear tarifa">
+                <li>Como se muestra en la ventana anterior se deben de rellenar los siguientes campos:</li>
+                <ol>
+                    <li><strong>Categoría: </strong>Se debe seleccionar una categoría previamente cargada en el sistema
+                        para registrar la tarifa deseada.</li>
+                    <img src="img/fees/fees-3.png" alt="Campo categoría">
+                    <li><strong>Categoría ARESEP: </strong>Similar al campo anterior se debe seleccionar una categoría
+                        de ARESEP previamente cargada en el sistema para registrar la tarifa deseada.</li>
+                    <img src="img/fees/fees-4.png" alt="Campo categoría ARESEP">
+                    <li><strong>Identificador: </strong>Identificador único de la tarifa.</li>
+                    <img src="img/fees/fees-5.png" alt="Campo identificador">
+                    <li><strong>Nombre: </strong>Nombre de la tarifa a nivel del sistema.</li>
+                    <img src="img/fees/fees-6.png" alt="Campo nombre">
+                    <li><strong>Descripción: </strong>Breve descripción de la tarifa a nivel del sistema.</li>
+                    <img src="img/fees/fees-7.png" alt="Campo descripción">
+                    <li><strong>Unidad de medida:</strong>Se debe seleccionar una unidad de medida previamente
+                        registrada en el sistema para el registro de la tarifa deseada.</li>
+                    <img src="img/fees/fees-8.png" alt="Campo unidad de medida">
+                    <li><strong>Moneda: </strong>Se debe seleccionar una moneda de cobro previamente registrada en el
+                        sistema para el registro de la tarifa deseada.</li>
+                    <img src="img/fees/fees-9.png" alt="Campo moneda">
+                    <li><strong>Valor base: </strong>Valor inicial de la tarifa en relación a la unidad de medida.</li>
+                    <img src="img/fees/fees-10.png" alt="Campo valor base">
+                    <li><strong>CABYS: </strong>Se debe de ingresar el CABYS correspondiente a la tarifa siempre y
+                        cuando cumpla con los estipulados por el Ministerio de Hacienda.</li>
+                    <img src="img/fees/fees-11.png" alt="Campo CABYS">
+                </ol>
+                <li>Una vez completados todos los espacios con la información deseada se puede agregar al sistema dando
+                    clic en el botón <span class="boton" style="background-color:#2196f3;">Guardar</span></li>
+                <li>En caso que se desee desistir de la operación en cualquier momento se puede dar cli en el botón
+                    <span class="boton" style="background-color: white; -webkit-text-fill-color: #333;">Cancelar</span>
+                </li>
+            </ol>
+            <div class="advertencia">
+                <strong>Advertencia: </strong> A excepción del campo <u>Descripción</u> todos los demás campos en la
+                sección de agregar nueva tarifa son de <strong>carácter obligatorio</strong>.
+            </div>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">2</span>
+            <h3>Búsqueda por filtro</h3>
+            <p>Para realizar la búsqueda por filtro de manera exitosa se debe de seguir los siguientes pasos:</p>
+            <ol>
+                <li>Posicionar el cursor sobre el campo <u>Filtro</u> ubicado en la parte superior izquierda de la tabla
+                    por debajo del botón <u>Agregar nueva tarifa</u>.</li>
+                <img src="img/fees/fees-12.png" alt="Espacio filtro">
+                <li>Una vez ubicado el campo de filtro, ingresa los criterios deseados. Si existen coincidencias
+                    con los datos registrados, los resultados se mostrarán automáticamente en pantalla.</li>
+                <img src="img/fees/fees-13.gif" alt="Resultado búsqueda filtro">
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">3</span>
+            <h3>Función descarga de datos</h3>
+            <p>Para realizar la descarga de datos se debe seguir los siguientes pasos:</p>
+            <ol>
+                <li>Posicionar el cursor sobre el botón de descarga ubicado en el lado superior derecho de la tabla
+                    presente.</li>
+                <img src="img/fees/fees-14.png" alt="Botón descargar">
+                <li>Al momento de posicionar el cursor se debe dar clic sobre este para descargar el archivo en formato
+                    <strong>.xlsx</strong>.
+                </li>
+                <img src="img/fees/fees-15.png" alt="Descargar archivo">
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">4</span>
+            <h3>Actualización de información</h3>
+            <p>Para realizar la actualización de información se debe seguir los siguientes pasos:</p>
+            <ol>
+                <li>Ubicar el cursor sobre el botón ubicado en la parte superior izquierda de la tabla por debajo del
+                    espacio de filtro</li>
+                <img src="img/fees/fees-16.gif" alt="Botón actualizar">
+                <li>Como se puede visualizar en la ilustración anterior cuando se da clic en el botón la información se
+                    actualizará a la más reciente registrada en el sistema.</li>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">5</span>
+            <h3>Opciones extra</h3>
+            <p>Para realizar alguna de estas acciones se debe seguir los siguientes pasos:</p>
+            <div class="paso">
+                <span class="numero-paso">5.1</span>
+                <h3>Activar tarifa</h3>
+                <p>Para activiar una tarifa existente se debe hacer lo siguiente:</p>
+                <ol>
+                    <li>Ubicar el cursor sobre el botón <u>Opciones</u> ubicado en la parte izquierda de todas las filas
+                        existentes en la tabla.</li>
+                    <img src="img/fees/fees-17.png" alt="Botón opciones">
+                    <li>Una vez posicionados en el botón, se debe dar clic para abrir una ventana emergente con las
+                        diversas opciones correspondientes.</li>
+                    <img src="img/fees/fees-18.png" alt="Ventana opciones">
+                    <li>La opción que se necesita en este apartado es la de <u>Activar</u>.</li>
+                    <img src="img/fees/fees-19.png" alt="Opción activar">
+                    <li>Una vez seleccionada NO SE QUE SIGUE INVESTIGAR JAJAJAJA</li>
+                </ol>
+            </div>
+            <div class="paso">
+                <span class="numero-paso">5.2</span>
+                <h3>Desactivar tarifa</h3>
+                <p>Para desactivar una tarifa existente se debe hacer lo siguiente:</p>
+                <ol>
+                    <li>Ubicar el cursor sobre el botón <u>Opciones</u> ubicado en la parte izquierda de todas las
+                        filas
+                        existentes en la tabla.</li>
+                    <img src="img/fees/fees-17.png" alt="Botón opciones">
+                    <li>Una vez posicionados en el botón, se debe dar clic para abrir una ventana emergente con las
+                        diversas opciones correspondientes.</li>
+                    <img src="img/fees/fees-18.png" alt="Ventana opciones">
+                    <li>La opción que se necesita en este apartado es la de <u>Desactivar</u>.</li>
+                    <img src="img/fees/fees-20.png" alt="Opción desactivar">
+                    <li>Una vez seleccionada NO SE QUE SIGUE INVESTIGAR JAJAJAJA</li>
+                </ol>
+            </div>
+            <div class="paso">
+                <span class="numero-paso">5.3</span>
+                <h3>Versionado de tarifa</h3>
+                <p>Para realizar la versionación de una tarifa existente en el sistema se debe hacer lo siguiente:</p>
+                <ol>
+                    <li>Ubicar el cursor sobre el botón <u>Opciones</u> ubicado en la parte izquierda de todas las
+                        filas
+                        existentes en la tabla.</li>
+                    <img src="img/fees/fees-17.png" alt="Botón opciones">
+                    <li>Una vez posicionados en el botón, se debe dar clic para abrir una ventana emergente con las
+                        diversas opciones correspondientes.</li>
+                    <img src="img/fees/fees-18.png" alt="Ventana opciones">
+                    <li>La opción que se necesita en este apartado es la de <u>Versiones</u>.</li>
+                    <img src="img/fees/fees-21.png" alt="Opción versiones">
+                    <li>Una vez seleccionada NO SE QUE SIGUE INVESTIGAR JAJAJAJA</li>
+                </ol>
+            </div>
+            <div class="paso">
+                <span class="numero-paso">5.4</span>
+                <h3>Editar tarifa</h3>
+                <p>Para editar una tarifa existente se debe seguir los siguientes pasos:</p>
+                <ol>
+                    <li>Ubicar el cursor sobre el botón <u>Opciones</u> ubicado en la parte izquierda de todas las
+                        filas
+                        existentes en la tabla.</li>
+                    <img src="img/fees/fees-17.png" alt="Botón opciones">
+                    <li>Una vez posicionados en el botón, se debe dar clic para abrir una ventana emergente con las
+                        diversas opciones correspondientes.</li>
+                    <img src="img/fees/fees-18.png" alt="Ventana opciones">
+                    <li>La opción que se necesita en este apartado es la de <u>Editar</u>.</li>
+                    <img src="img/fees/fees-22.png" alt="Opción editar">
+                    <li>Una vez seleccionada se mostrará una ventana emergente con la siguiente apariencia.</li>
+                    <img src="img/fees/fees-23.png" alt="Ventana editar">
+                    <li>Como se puede observar en la imagen anterior la ventana de editar es realmente la misma que la
+                        de agregar nueva tarifa por ende la configuración de los campos es la misma.</li>
+                    <div class="advertencia">
+                        <strong>Advertencia: </strong> A excepción del campo <u>Descripción</u> todos los demás campos
+                        en la sección de edición son de <strong>carácter obligatorio</strong>.
+                    </div>
+                </ol>
+                </span>
+            </div>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">6</span>
+            <h3>Visualización de información en pantalla Tarifas</h3>
+            <p>Para brindar una experiencia más sencilla para comprender la información presente en pantalla se
+                explicarán a continuación los diversos campos que conforman la tabla de datos. <u>De izquierda a
+                    derecha)</u>.</p>
+            <ol>
+                <li><strong>Código: </strong>Identificado único de la tarifa.</li>
+                <li><strong>Nombre: </strong>Nombre de la tarifa a nivel del sistema.</li>
+                <li><strong>Categoría: </strong>Categoria de tarifa a nivel del sistema.</li>
+                <li><strong>Unidad de medida: </strong>Unidad de medida a nivel del sistema.</li>
+                <li><strong>Moneda: </strong>Divisa con la cual se realiza el cobro de la tarifa a nivel del sistema.
+                </li>
+                <li><strong>Valor base: </strong>Valor inicial de la tarifa en relación a la unidad de medida con la que
+                    realiza el cobro.</li>
+                <li><strong>CABYS: </strong>Se refiere al Catálogo de Bienes y Servicios según lo estipulado por el
+                    Ministerio de Hacienda.</li>
+                <img src="img/fees/fees-24.png" alt="Información en pantalla">
+            </ol>
+        </div>
+    </section>
+
+    <section id="seccion3">
+        <h2>3. Contacto y soporte</h2>
+        <p>Si necesitas ayuda adicional, contáctanos:</p>
+        <ul>
+            <li><strong>Correo electrónico:</strong> soporte@empresa.com</li>
+            <li><strong>Teléfono:</strong> +1 (123) 456-7890</li>
+            <li><strong>Horario de atención:</strong> Lunes a Viernes, 9 am - 5 pm</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 JAPDEVA. Todos los derechos reservados.</p>
+        <p>Versión de la guía: 1.0 | Última actualización: [Fecha]</p>
+    </footer>
+</body>
+
+</html>
