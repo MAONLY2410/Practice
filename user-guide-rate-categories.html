@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Usuario - Categorías de Tarifa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            background-color: #f8f9fa;
+            padding: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .paso {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .numero-paso {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .consejo {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .advertencia {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+        }
+
+        .boton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 4px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Guía de Usuario - Categorías de Tarifa</h1>
+        <p>Bienvenido a la guía de usuario para la pantalla <strong>Categorías de Tarifa</strong> del sistema PLS. Esta
+            guía está diseñada para ayudarte a utilizar y comprender de forma sencilla y directa las funcionalidades que
+            ofrece esta pantalla.</p>
+    </header>
+
+    <nav>
+        <h2>Contenido</h2>
+        <ul>
+            <li><a href="#seccion1">1. Introducción</a></li>
+            <li><a href="#seccion2">2. Funciones principales</a></li>
+            <li><a href="#seccion3">3. Contacto y soporte</a></li>
+        </ul>
+    </nav>
+
+    <section id="seccion1">
+        <h2>1. Introducción</h2>
+        <p>Ubicada en el submenú <u>Facturación de Servicios</u>, esta pantalla permite registrar, consultar, actualizar
+            y
+            gestionar categorías de tarifa, incluyendo funciones para editar o eliminar registros existentes y mantener
+            la estructura tarifaria actualizada.
+        </p>
+        <img src="img/rate-categories/rate-categories-0.png" alt="Pantalla categorías de tarifa">
+        <div class="consejo">
+            <strong>Consejo:</strong> Esta guía está diseñada para ser leída en orden, pero puedes saltar a las
+            secciones que necesites usando el menú de contenido.
+        </div>
+    </section>
+
+    <section id="seccion2">
+        <h2>2. Funciones principales</h2>
+        <div class="paso">
+            <span class="numero-paso">1</span>
+            <h3>Registrar nueva categoría</h3>
+            <p>Para realizar un registro eficiente de una nueva categoría se debe hacer lo siguiente:</p>
+            <ol>
+                <li>Posicionar el cursor sobre el botón de <u>Registrar</u> ubicado en la parte superior izquierda de la
+                    pantalla.</li>
+                <img src="img/rate-categories/rate-categories-1.png" alt="Botón registrar">
+                <li>Una vez posicionado el cursor se debe dar clic sobre el botón el cual desplegará una ventana
+                    emergente con todos los campos requeridos para el registro.</li>
+                <img src="img/rate-categories/rate-categories-2.gif" alt="Ventana de registro">
+                <li>En la ventana de registro los campos que se deben de rellenar son los siguientes:</li>
+                <ol>
+                    <li><strong>Código: </strong>Identificador único de la categoría.</li>
+                    <img src="img/rate-categories/rate-categories-3.png" alt="Campo código">
+                    <li><strong>Nombre: </strong>Nombre de la categoría a nivel de sistema.</li>
+                    <img src="img/rate-categories/rate-categories-4.png" alt="Campo nombre">
+                    <li><strong>Descripción: </strong>Breve descripción de la categoría a nivel de sistema.</li>
+                    <img src="img/rate-categories/rate-categories-5.png" alt="Campo descripción">
+                    <li>Una vez completados todos los espacios se puede guardar la información dando clic en el botón
+                        <span class="boton" style="background-color: #2196f3;">Guardar</span> para finalizar el proceso.
+                    </li>
+                    <li>En caso de que se desee cancelar la operación en cualquier momento se puede hacer clic en el
+                        botón <span class="boton"
+                            style="background-color: white; -webkit-text-fill-color: #333;">Cancelar</span> para
+                        abandonar el proceso.</li>
+                </ol>
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">2</span>
+            <h3>Búsqueda por filtro</h3>
+            <p>Para realizar la búsqueda por filtro de manera exitosa se debe de seguir los siguientes pasos:</p>
+            <ol>
+                <li>Posicionar el cursor sobre el campo <u>Filtro</u> ubicado en la parte superior izquierda de la tabla
+                    presente en la pantalla.</li>
+                <img src="img/rate-categories/rate-categories-6.png" alt="Espacio filtro">
+                <li>Una vez posicionados en el campo se deben de ingresar los criterios de búsqueda donde si existen en
+                    el sistema alguna coincidencia con los datos registrados estos se mostrarán automáticamente en
+                    pantalla.</li>
+                <img src="img/rate-categories/rate-categories-7.gif" alt="Resultados búsqueda filtro">
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">3</span>
+            <h3>Función actualización de datos</h3>
+            <p>Para realizar la actualización de datos se debe seguir los siguientes pasos:</p>
+            <ol>
+                <li>Posicionar el cursor sobre el botón ubicado en la parte superior izquierda de la tabla por debajo
+                    del botón de <u>Filtro</u>.</li>
+                <img src="img/rate-categories/rate-categories-8.png" alt="Botón actualizar">
+                <li>Al momento de posicionar el cursor se debe dar clic sobre este para refrescar a la información más
+                    reciente existente en el sistema.</li>
+                <img src="img/rate-categories/rate-categories-9.gif" alt="Actualización de datos">
+            </ol>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">4</span>
+            <h3>Opciones extra</h3>
+            <p>Para realizar alguna de estas acciones se debe de seguir los siguientes pasos:</p>
+            <div class="paso">
+                <span class="numero-paso">4.1</span>
+                <h3>Editar categoría existente</h3>
+                <p>Para editar una categoría existente se debe hacer lo siguiente:</p>
+                <ol>
+                    <li>Localizar y posicionar el cursor sobre el botón de <u>Opciones</u> que se encuentra del lado
+                        izquierdo de todas las filas de la tabla.</li>
+                    <img src="img/rate-categories/rate-categories-10.png" alt="Botón opciones">
+                    <li>Una vez sobre el botón se debe dar clic para abrir una ventana emergente con las opciones
+                        correspondientes.</li>
+                    <img src="img/rate-categories/rate-categories-11.gif" alt="Ventana opciones">
+                    <li>La opción que se necesita en este caso es la de <u>Editar</u> que se encuentra posicionada
+                        de primera en la ventana emergente.</li>
+                    <img src="img/rate-categories/rate-categories-12.png" alt="Opción editar">
+                    <li>Dentro de la opción <u>Editar</u> se encuentra una ventana emergente con la siguiente
+                        apariencia.</li>
+                    <img src="img/rate-categories/rate-categories-13.png" alt="Ventana editar">
+                    <li>Como se puede visualizar en la imagen anterior, se puede observar que se pueden editar todos los
+                        campos si es necesario.</li>
+                </ol>
+            </div>
+            <div class="paso">
+                <span class="numero-paso">4.2</span>
+                <h3>Eliminar categoría existente</h3>
+                <p>Para eliminar una categoría existente se debe hacer lo siguiente:</p>
+                <ol>
+                    <li>Localizar y posicionar el cursor sobre el botón de <u>Opciones</u> que se encuentra del lado
+                        izquierdo de todas las filas de la tabla.</li>
+                    <img src="img/rate-categories/rate-categories-10.png" alt="Botón opciones">
+                    <li>Una vez sobre el botón se debe dar clic para abrir una ventana emergente con las opciones
+                        correspondientes.</li>
+                    <img src="img/rate-categories/rate-categories-11.gif" alt="Ventana opciones">
+                    <li>La opción que se necesita en este caso es la de <u>Eliminar</u> que se encuentra posicionada
+                        de segunda en la ventana emergente.</li>
+                    <img src="img/rate-categories/rate-categories-14.png" alt="Opción eliminar">
+                    <li>Una vez seleccionada la opción <u>Eliminar</u> se desplegará una ventana emergente en la cual se
+                        debe confirmar la operación.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="paso">
+            <span class="numero-paso">5</span>
+            <h3>Visualización de información en pantalla Categorías de Tarifa</h3>
+            <p>Para brindar una experiencia más sencilla para comprender la información presente en pantalla se
+                explicarán a continuación los diversos campos que conforman la tabla de datos. <u>De izquierda a
+                    derecha)</u>.</p>
+            <ol>
+                <li><strong>Código: </strong>Identificador único de la categoría.</li>
+                <li><strong>Nombre: </strong>Nombre de la categoría a nivel de sistema.</li>
+                <li><strong>Descripción: </strong>Breve descripción de la categoría a nivel de sistema.</li>
+                <img src="img/rate-categories/rate-categories-15.png" alt="Información en pantalla">
+            </ol>
+        </div>
+    </section>
+
+    <section id="seccion3">
+        <h2>3. Contacto y soporte</h2>
+        <p>Si necesitas ayuda adicional, contáctanos:</p>
+        <ul>
+            <li><strong>Correo electrónico:</strong> soporte@empresa.com</li>
+            <li><strong>Teléfono:</strong> +1 (123) 456-7890</li>
+            <li><strong>Horario de atención:</strong> Lunes a Viernes, 9 am - 5 pm</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 JAPDEVA. Todos los derechos reservados.</p>
+        <p>Versión de la guía: 1.0 | Última actualización: [Fecha]</p>
+    </footer>
+</body>
+
+</html>
